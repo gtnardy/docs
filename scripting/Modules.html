@@ -1,0 +1,378 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Modules &mdash; nanos.world Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/style.css?v2" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css?v1" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script type="text/javascript" src="../_static/sphinx_tabs/tabs.js"></script>
+        <script type="text/javascript" src="../_static/js/script.js?v1"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Modding" href="../modding/index.html" />
+    <link rel="prev" title="Glossary" href="Glossary.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../About.html">About us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ContributingToDocs.html">Contributing to the Docs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/AssetsQuickStart.html">Assets Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/ScriptingQuickStart.html">Scripting Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/ServerManual.html">Server Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/WebUIQuickStart.html">WebUI Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials &amp; Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/BasicHUDCanvas.html">Basic HUD (Canvas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/BasicHUDHTML.html">Basic HUD (HTML)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/ChatColors.html">Chat Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/MonsterTruck.html">Monster Truck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/NameTags.html">Name Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/PlayAsProp.html">Play as Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/PropShooter.html">Prop Shooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/PropRain.html">Prop Rain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/ScoreHitLog.html">Score, Kill &amp; Hit Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/Trace.html">Traces / Raycasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/WeaponFlashlight.html">Weapon Flashlight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/WeaponScope.html">Weapon Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/XRay.html">X-Ray / Highlight</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Scripting</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="classes/index.html">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classes/Character.html">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/Grenade.html">Grenade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/Item.html">Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/Light.html">Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/Particle.html">Particle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/Player.html">Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/Prop.html">Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/Sound.html">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/TextRender.html">Text Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/Vehicle.html">Vehicle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/Weapon.html">Weapon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes/WebUI.html">WebUI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="static_classes/index.html">Static Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="static_classes/Assets.html">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_classes/Client.html">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_classes/Events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_classes/NanosWorld.html">NanosWorld</a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_classes/Package.html">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_classes/Render.html">Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_classes/Server.html">Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_classes/Timer.html">Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_classes/World.html">World</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utility/index.html">Utility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="utility/Color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utility/JSON.html">JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utility/Rotator.html">Rotator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utility/Vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utility/Vector2D.html">Vector2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="utility/NanosMathLibrary.html">NanosMathLibrary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Glossary.html">Glossary</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Modules</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assets &amp; Modding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modding/index.html">Modding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modding/AssetsDevelopmentKit.html">Assets Development Kit - ADK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modding/Characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modding/MapsAndLevels.html">Maps &amp; Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modding/StaticMeshes.html">Static Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/NanosWorldDefaultPack.html">Nanos World Default Assets Pack</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">nanos.world Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Modules</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/nanos-world/docs/blob/master/scripting/Modules.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="modules">
+<h1>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h1>
+<p>Modules allows you to extend the functionality of the nanos world scripting API on the server side. Currently only C modules are supported.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Be aware that this part of the scripting API is currently work in progress and may change at any time.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A guide to create your own module will follow (soon™).</p>
+</div>
+<div class="section" id="luasql-mysql">
+<h2>LuaSQL-MySQL<a class="headerlink" href="#luasql-mysql" title="Permalink to this headline">¶</a></h2>
+<p>LuaSQL-MySQL is a simple interface to communicate with a MySQL or MariaDB server. We provide an already precompiled version of this module which is already ready to use.</p>
+<p>Documentation of LuaSQL: <a class="reference external" href="http://keplerproject.github.io/luasql/">http://keplerproject.github.io/luasql/</a></p>
+</div>
+<div class="section" id="download-and-installation">
+<h2>Download and Installation<a class="headerlink" href="#download-and-installation" title="Permalink to this headline">¶</a></h2>
+<p>Download your platform library:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/nanos-world-modules/luasql-mysql/releases/latest/download/mysql_windows.zip">mysql_windows.zip</a></p></li>
+<li><p><a class="reference external" href="https://github.com/nanos-world-modules/luasql-mysql/releases/latest/download/mysql_linux.zip">mysql_linux.zip</a></p></li>
+</ul>
+<p>Extract it into your <code class="docutils literal notranslate"><span class="pre">ServerRoot/Modules/</span></code> folder:</p>
+<img alt="https://i.imgur.com/lhJ5Za8.png" src="https://i.imgur.com/lhJ5Za8.png" />
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Always escape all query parameters with <code class="docutils literal notranslate"><span class="pre">:escape</span></code> function!</p>
+</div>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-THVh docutils container">
+<div class="docutils container">
+<p>Lua</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-THVh active docutils container">
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="kd">local</span> <span class="n">luasql</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;luasql.mysql&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">mysql</span> <span class="o">=</span> <span class="n">luasql</span><span class="p">.</span><span class="n">mysql</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">connection</span> <span class="o">=</span> <span class="n">mysql</span><span class="p">:</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;database&quot;</span><span class="p">,</span> <span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">,</span> <span class="s2">&quot;localhost&quot;</span><span class="p">,</span> <span class="mi">3306</span><span class="p">)</span>
+
+<span class="kr">if</span> <span class="ow">not</span> <span class="n">connection</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">connection</span><span class="p">:</span><span class="n">ping</span><span class="p">()</span> <span class="kr">then</span>
+    <span class="n">Package</span><span class="p">:</span><span class="n">Log</span><span class="p">(</span><span class="s2">&quot;Connection failed&quot;</span><span class="p">)</span>
+<span class="kr">else</span>
+    <span class="n">connection</span><span class="p">:</span><span class="n">execute</span><span class="p">(</span><span class="s">[[</span>
+<span class="s">        CREATE TABLE hello_world(</span>
+<span class="s">            message varchar(50)</span>
+<span class="s">        );</span>
+<span class="s">    ]]</span><span class="p">)</span>
+
+    <span class="n">connection</span><span class="p">:</span><span class="n">execute</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s">[[</span>
+<span class="s">        INSERT INTO hello_world VALUES (&#39;%s&#39;);</span>
+<span class="s">    ]]</span><span class="p">,</span> <span class="n">connection</span><span class="p">:</span><span class="n">escape</span><span class="p">(</span><span class="s2">&quot;Hello nanos.world&quot;</span><span class="p">)))</span>
+    <span class="c1">-- (You should always use escape for user input to prevent sql injection!)</span>
+
+    <span class="kd">local</span> <span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="p">:</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM hello_world&quot;</span><span class="p">)</span>
+    <span class="kd">local</span> <span class="n">row</span> <span class="o">=</span> <span class="n">cursor</span><span class="p">:</span><span class="n">fetch</span><span class="p">({},</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+
+    <span class="n">Package</span><span class="p">:</span><span class="n">Log</span><span class="p">(</span><span class="s2">&quot;Message: &quot;</span> <span class="o">..</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">row</span><span class="p">.</span><span class="n">message</span><span class="p">))</span>
+    <span class="c1">-- Outputs: &quot;[Script]   Message: Hello nanos.world&quot; to the console</span>
+<span class="kr">end</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../modding/index.html" class="btn btn-neutral float-right" title="Modding" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Glossary.html" class="btn btn-neutral float-left" title="Glossary" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, nanos GbR
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,415 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Maps &amp; Levels &mdash; nanos.world Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/style.css?v2" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css?v1" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/script.js?v1"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Static Meshes" href="StaticMeshes.html" />
+    <link rel="prev" title="Characters" href="Characters.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../About.html">About us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ContributingToDocs.html">Contributing to the Docs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/AssetsQuickStart.html">Assets Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/ScriptingQuickStart.html">Scripting Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/ServerManual.html">Server Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/WebUIQuickStart.html">WebUI Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials &amp; Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/BasicHUDCanvas.html">Basic HUD (Canvas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/BasicHUDHTML.html">Basic HUD (HTML)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/ChatColors.html">Chat Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/MonsterTruck.html">Monster Truck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/NameTags.html">Name Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/PlayAsProp.html">Play as Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/PropShooter.html">Prop Shooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/PropRain.html">Prop Rain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/ScoreHitLog.html">Score, Kill &amp; Hit Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/Trace.html">Traces / Raycasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/WeaponFlashlight.html">Weapon Flashlight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/WeaponScope.html">Weapon Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/XRay.html">X-Ray / Highlight</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Scripting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/classes/index.html">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Character.html">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Grenade.html">Grenade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Item.html">Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Light.html">Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Particle.html">Particle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Player.html">Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Prop.html">Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Sound.html">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/TextRender.html">Text Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Vehicle.html">Vehicle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Weapon.html">Weapon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/WebUI.html">WebUI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/static_classes/index.html">Static Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Assets.html">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Client.html">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/NanosWorld.html">NanosWorld</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Package.html">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Render.html">Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Server.html">Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Timer.html">Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/World.html">World</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/utility/index.html">Utility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/JSON.html">JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Rotator.html">Rotator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Vector2D.html">Vector2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/NanosMathLibrary.html">NanosMathLibrary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/Glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/Modules.html">Modules</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assets &amp; Modding</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Modding</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="AssetsDevelopmentKit.html">Assets Development Kit - ADK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Characters.html">Characters</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Maps &amp; Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="StaticMeshes.html">Static Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="NanosWorldDefaultPack.html">Nanos World Default Assets Pack</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">nanos.world Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Modding</a> &raquo;</li>
+        
+      <li>Maps &amp; Levels</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/nanos-world/docs/blob/master/modding/MapsAndLevels.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="maps-levels">
+<span id="mapsandlevels"></span><h1>Maps &amp; Levels<a class="headerlink" href="#maps-levels" title="Permalink to this headline">¶</a></h1>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>This page is under construction.</p>
+</div>
+<p>Maps and Levels are quite the most straightforward asset that you can create and import. In Unreal, Maps are called <code class="docutils literal notranslate"><span class="pre">Levels</span></code>, usually these levels are filled with a Landscape component to make the terrain, some Lights and some Static Meshes (Trees, Houses, etc).</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Please refer to <a class="reference external" href="https://docs.unrealengine.com/en-US/Engine/Levels/HowTo/WorkWithLevelAssets/index.html">Unreal’s Official tutorial - Working with Levels</a>.</p>
+</div>
+<p>Tutorial by EinfachMax:</p>
+<iframe width="100%" height="485" src="https://www.youtube.com/embed/2FGkWdn9JP4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><div class="section" id="rules-for-creating-a-map-level-for-nanos-world">
+<h2>Rules for creating a Map/Level for nanos world<a class="headerlink" href="#rules-for-creating-a-map-level-for-nanos-world" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Do not spawn/place Dynamic Meshes (with Physics), as they will not be synced in-game. You need to spawn them as a <a class="reference internal" href="../scripting/classes/Prop.html#prop"><span class="std std-ref">Prop</span></a> on the scripting.</p></li>
+<li><p>Add a “Sun” actor-tag to all Lighting/Sky/Sun related actors (DirectionalLight, SkyLight, DomeMesh, SkyAtmosphere or SunSky), this will allow, if wanted, to your light to be overridden by scripters to use, instead, the Official nanos world Sun through <cite>World.SpawnDefaultSun()</cite>, which allows in-game light/sun customization.</p></li>
+</ol>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Most of <a class="reference internal" href="../scripting/static_classes/World.html#world"><span class="std std-ref">World</span></a> functions rely on our own assets and code, so it is not (yet) possible to change the lighting or weather in your custom Map with <a class="reference internal" href="../scripting/static_classes/World.html#world"><span class="std std-ref">World</span></a> scripting functions.</p>
+</div>
+<p>After exporting your project (refer to <a class="reference internal" href="../getting_started/AssetsQuickStart.html#assetsquickstart"><span class="std std-ref">Assets Quick Start</span></a>), you can just reference your map in your server config like <code class="docutils literal notranslate"><span class="pre">MyPack::MyLevel</span></code>.</p>
+</div>
+<div class="section" id="custom-map-script">
+<h2>Custom Map Script<a class="headerlink" href="#custom-map-script" title="Permalink to this headline">¶</a></h2>
+<p>Maps can also have a <strong>Custom Script</strong> (server-only) attached to it. These are files named <code class="docutils literal notranslate"><span class="pre">[MAP_NAME].lua</span></code> in the same folder as the map in the <code class="docutils literal notranslate"><span class="pre">Assets/</span></code> folder. If no one of your Packages disallow it, this script file will be loaded as well. Usually these scripts should have map specific spawn props/weapons points and pertinent stuff.</p>
+</div>
+<div class="section" id="creating-a-map-in-unreal-engine-4-from-scratch">
+<h2>Creating a Map in Unreal Engine 4 from Scratch<a class="headerlink" href="#creating-a-map-in-unreal-engine-4-from-scratch" title="Permalink to this headline">¶</a></h2>
+<p>The first step is to create a folder inside the <code class="docutils literal notranslate"><span class="pre">Content/</span></code> folder, <em>this step is very important</em>. Rename this folder with the Asset Pack name you desire <cite>(1. Expand the tab; 2. Right click on Content; 3. Create a New Folder)</cite>, (you can also rename the Blue folder to the AssetPack name you want):</p>
+<img alt="https://i.imgur.com/YBCNjn6.png" src="https://i.imgur.com/YBCNjn6.png" />
+<img alt="https://i.imgur.com/7OLhlNS.png" src="https://i.imgur.com/7OLhlNS.png" />
+<p>Now let’s create the Map itself, in Unreal maps are called <a class="reference external" href="https://docs.unrealengine.com/en-US/Engine/Levels/index.html">Levels</a>, to do so, (1.) right click on the Content space and (2.) create a new Level:</p>
+<img alt="https://i.imgur.com/FPa7Ykf.png" src="https://i.imgur.com/FPa7Ykf.png" />
+<p>Rename it with the map name you desire, save it and open it up. You will notice the viewport got black, this is because the Map you just opened doesn’t have anything, let’s add some stuff into it:</p>
+<img alt="https://i.imgur.com/QULpACu.png" src="https://i.imgur.com/QULpACu.png" />
+<p>First let’s add a floor, for that just drag-and-drop a Plane from <cite>Place Actors -&gt; Basic</cite> window into the viewport:</p>
+<img alt="https://i.imgur.com/h3m9hgJ.png" src="https://i.imgur.com/h3m9hgJ.png" />
+<img alt="https://i.imgur.com/W1MTn0j.png" src="https://i.imgur.com/W1MTn0j.png" />
+<p>With the plane selected, you will notice it is a simple Static Mesh, this Static Mesh is a model already included in the Engine, so it is important that you copy this Mesh to your Content/YourAssetPack folder to avoid any further export problem:</p>
+<img alt="https://i.imgur.com/GNE2VPq.png" src="https://i.imgur.com/GNE2VPq.png" />
+<p>To find where your Mesh is located, press the magnifying glass at the right of the Static Mesh item at the right of the screen:</p>
+<img alt="https://i.imgur.com/RtuOKWE.png" src="https://i.imgur.com/RtuOKWE.png" />
+<p>This will open the Engine’s folder which contains some Basic meshes which come with the Engine:</p>
+<img alt="https://i.imgur.com/ha58XIS.png" src="https://i.imgur.com/ha58XIS.png" />
+<p>Let’s copy some Basic Meshes into our AssetsPack folder to be used later, including the Plane:</p>
+<img alt="https://i.imgur.com/1FsnsRa.png" src="https://i.imgur.com/1FsnsRa.png" />
+<p>Use CTRL+C + CTRL+V to copy the assets into your folder:</p>
+<img alt="https://i.imgur.com/50E2Mbe.png" src="https://i.imgur.com/50E2Mbe.png" />
+<p>Now let’s replace the plane mesh we were using to our copied mesh, for that, just (1.) select the copied Plane mesh, and (2.) press the arrow on your Plane Actor to replace it’s Static Mesh (alternatively you can just Delete the spawned Plane and drag and drop the new Plane from your assets pack’s folder):</p>
+<img alt="https://i.imgur.com/8qcIqfA.png" src="https://i.imgur.com/8qcIqfA.png" />
+<p>After that, with your Plane (floor) selected, let’s just scale it to <code class="docutils literal notranslate"><span class="pre">X</span> <span class="pre">=</span> <span class="pre">10,</span> <span class="pre">Y</span> <span class="pre">=</span> <span class="pre">10,</span> <span class="pre">Z</span> <span class="pre">=</span> <span class="pre">10</span></code> and centralize it on <code class="docutils literal notranslate"><span class="pre">X</span> <span class="pre">=</span> <span class="pre">0,</span> <span class="pre">X</span> <span class="pre">=</span> <span class="pre">0,</span> <span class="pre">X</span> <span class="pre">=</span> <span class="pre">0</span></code>:</p>
+<img alt="https://i.imgur.com/j3wyK8u.png" src="https://i.imgur.com/j3wyK8u.png" />
+<p>We can also add some lights, for that, just drag and drop a <strong>Directional Light</strong> (Sun Light/Shadows) and a <strong>Sky Light</strong> (Shadow’s Color) into your level (you can fly around with Right Click + WASD in the viewport, or press F to centralize the Plane - if selected):</p>
+<img alt="https://i.imgur.com/VGnxyhy.png" src="https://i.imgur.com/VGnxyhy.png" />
+<p>Great job, now we can see the stuff! Now let’s add some color to it, applying color and textures in Unreal are made through
+<a class="reference external" href="https://docs.unrealengine.com/en-US/Engine/Rendering/Materials/index.html">Materials</a>, for that, let’s just create a Material ((1.) Right Click and (2.) create new Material):</p>
+<img alt="https://i.imgur.com/hxgwbTt.png" src="https://i.imgur.com/hxgwbTt.png" />
+<p>Rename it to <code class="docutils literal notranslate"><span class="pre">M_Plane</span></code> and open it up:</p>
+<img alt="https://i.imgur.com/QaWKYR1.png" src="https://i.imgur.com/QaWKYR1.png" />
+<p>We won’t cover all aspects of Materials in this tutorial, for now let’s just pin a Vector3 node with a color into Base Color input, for that Right Click on the screen and search for <code class="docutils literal notranslate"><span class="pre">Constant3Vector</span></code>:</p>
+<img alt="https://i.imgur.com/StcYiTH.png" src="https://i.imgur.com/StcYiTH.png" />
+<p>After that, pin it into Base Color input:</p>
+<img alt="https://i.imgur.com/KndyfuF.png" src="https://i.imgur.com/KndyfuF.png" />
+<p>Select the Vector3 node and select a color for it:</p>
+<img alt="https://i.imgur.com/xlOLBIM.png" src="https://i.imgur.com/xlOLBIM.png" />
+<p>Now save and close this Material window, and you are able to drag and drop your material into the Mesh you want, let’s do it for the Plane:</p>
+<img alt="https://i.imgur.com/FjjtNZj.png" src="https://i.imgur.com/FjjtNZj.png" />
+<p>And voila, it gets greenish (or the color you selected in the Plane’s Material screen)!</p>
+<img alt="https://i.imgur.com/en4fbEt.png" src="https://i.imgur.com/en4fbEt.png" />
+<p>Now let’s drag’n drop other Meshes into our Level, like so:</p>
+<img alt="https://i.imgur.com/dydOKb3.png" src="https://i.imgur.com/dydOKb3.png" />
+<p>Also, the ADK project provides a built-in Sun &amp; SkyBox Actor (to fill up the sky with color and clouds), to add it, just look into <code class="docutils literal notranslate"><span class="pre">NanosWorld/Blueprints/World/</span></code> for <code class="docutils literal notranslate"><span class="pre">BP_SunSky</span></code> and drag it to the viewport.</p>
+<p>You can create a new Material and use it to paint these meshes as well:</p>
+<img alt="https://i.imgur.com/9McdsLZ.png" src="https://i.imgur.com/9McdsLZ.png" />
+<p>If you (1.) select the Directional Light, you can change it’s (2.) Rotation, also, remember to set it to (3.) Movable, so it’s shadows work in Real Time, feel free to tweak the light as you want, including it’s Color and intensity:</p>
+<img alt="https://i.imgur.com/RMh8XKg.png" src="https://i.imgur.com/RMh8XKg.png" />
+<p>When you are fine with it, move your camera to see the whole map and take a screenshot of it, we will use that for a Thumbnail afterwards (save it anywhere with the same name as your Map as .jpg, in our case: <code class="docutils literal notranslate"><span class="pre">MyAwesomeMap.jpg</span></code>):</p>
+<img alt="https://i.imgur.com/2hsBQ7g.png" src="https://i.imgur.com/2hsBQ7g.png" />
+<p>And we are done! Save everything and let’s export it:</p>
+<img alt="https://i.imgur.com/hAravoG.png" src="https://i.imgur.com/hAravoG.png" />
+<p>Select any folder in your computer and wait it to finish:</p>
+<img alt="https://i.imgur.com/OydyFSF.png" src="https://i.imgur.com/OydyFSF.png" />
+<img alt="https://i.imgur.com/Bnws2Te.png" src="https://i.imgur.com/Bnws2Te.png" />
+</div>
+<div class="section" id="importing-your-map-into-your-server">
+<h2>Importing your Map into your Server<a class="headerlink" href="#importing-your-map-into-your-server" title="Permalink to this headline">¶</a></h2>
+<p>Open your Packaged folder and you will have something like this:</p>
+<img alt="https://i.imgur.com/vSxtaQn.png" src="https://i.imgur.com/vSxtaQn.png" />
+<p>Copy the Thumbnail to the same folder as your Level (should be in <code class="docutils literal notranslate"><span class="pre">MyAwesomeAssetPack/Content/MyAwesomeAssetPack</span></code>):</p>
+<img alt="https://i.imgur.com/HupcN27.png" src="https://i.imgur.com/HupcN27.png" />
+<p>Now jump to the (1.) <code class="docutils literal notranslate"><span class="pre">Content/</span></code> folder and (2/3.) copy your whole <code class="docutils literal notranslate"><span class="pre">MyAwesomeAssetPack/</span></code> folder:</p>
+<img alt="https://i.imgur.com/Uz9aqZF.png" src="https://i.imgur.com/Uz9aqZF.png" />
+<p>And paste it inside your server’s <code class="docutils literal notranslate"><span class="pre">Assets/</span></code> folder:</p>
+<img alt="https://i.imgur.com/PBBWnnQ.png" src="https://i.imgur.com/PBBWnnQ.png" />
+<p>Open the folder you copied and create a <code class="docutils literal notranslate"><span class="pre">Assets.toml</span></code> file in it, and paste the content located at <a class="reference external" href="https://docs.nanos.world/getting_started/Assets.html#assets-configuration-file">Assets#Assets Configuration File</a> into this file.</p>
+<img alt="https://i.imgur.com/27XVOzN.png" src="https://i.imgur.com/27XVOzN.png" />
+<p>You will end up with something like that, remember to add an Entry to <code class="docutils literal notranslate"><span class="pre">assets.maps</span></code> list with the <strong>MapKeyName</strong> = <strong>MapPath</strong> pattern, the Map Key Name can be whatever you want, as our map is in the root of our Asset Pack, the Path is just <code class="docutils literal notranslate"><span class="pre">MyAwesomeMap</span></code> and we gave the key the name <code class="docutils literal notranslate"><span class="pre">MyAwesomeMap</span></code> as well:</p>
+<img alt="https://i.imgur.com/Cn5nBVA.png" src="https://i.imgur.com/Cn5nBVA.png" />
+<p>Now you can add your map to your Server’s <code class="docutils literal notranslate"><span class="pre">Config.toml</span></code> settings:</p>
+<img alt="https://i.imgur.com/xvi5mjV.png" src="https://i.imgur.com/xvi5mjV.png" />
+<p>Or just open the game and (if you are using the built-in nanos world Server), you will find your new map in the <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Game</span></code> screen like that with your thumbnail:</p>
+<img alt="https://i.imgur.com/ncWwscw.png" src="https://i.imgur.com/ncWwscw.png" />
+<p>You can now just start the New Game with the <code class="docutils literal notranslate"><span class="pre">Sandbox</span></code> package selected and VOILA! Your playable new map made from scratch!</p>
+<img alt="https://i.imgur.com/Tyr7OIj.png" src="https://i.imgur.com/Tyr7OIj.png" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="StaticMeshes.html" class="btn btn-neutral float-right" title="Static Meshes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Characters.html" class="btn btn-neutral float-left" title="Characters" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, nanos GbR
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,1443 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Character &mdash; nanos.world Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css?v2" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css?v1" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script type="text/javascript" src="../../_static/sphinx_tabs/tabs.js"></script>
+        <script type="text/javascript" src="../../_static/js/script.js?v1"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="File" href="File.html" />
+    <link rel="prev" title="Classes" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../About.html">About us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContributingToDocs.html">Contributing to the Docs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/AssetsQuickStart.html">Assets Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/ScriptingQuickStart.html">Scripting Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/ServerManual.html">Server Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/WebUIQuickStart.html">WebUI Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials &amp; Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/BasicHUDCanvas.html">Basic HUD (Canvas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/BasicHUDHTML.html">Basic HUD (HTML)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/ChatColors.html">Chat Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/MonsterTruck.html">Monster Truck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/NameTags.html">Name Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PlayAsProp.html">Play as Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PropShooter.html">Prop Shooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PropRain.html">Prop Rain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/ScoreHitLog.html">Score, Kill &amp; Hit Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Trace.html">Traces / Raycasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/WeaponFlashlight.html">Weapon Flashlight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/WeaponScope.html">Weapon Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/XRay.html">X-Ray / Highlight</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Scripting</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Grenade.html">Grenade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Item.html">Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Light.html">Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Particle.html">Particle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Player.html">Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Prop.html">Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TextRender.html">Text Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Vehicle.html">Vehicle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Weapon.html">Weapon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WebUI.html">WebUI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../static_classes/index.html">Static Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Assets.html">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Client.html">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/NanosWorld.html">NanosWorld</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Package.html">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Render.html">Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Server.html">Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Timer.html">Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/World.html">World</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../utility/index.html">Utility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/JSON.html">JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Rotator.html">Rotator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Vector2D.html">Vector2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/NanosMathLibrary.html">NanosMathLibrary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Modules.html">Modules</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assets &amp; Modding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modding/index.html">Modding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/AssetsDevelopmentKit.html">Assets Development Kit - ADK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/Characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/MapsAndLevels.html">Maps &amp; Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/StaticMeshes.html">Static Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../modding/NanosWorldDefaultPack.html">Nanos World Default Assets Pack</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">nanos.world Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Classes</a> &raquo;</li>
+        
+      <li>Character</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/nanos-world/docs/blob/master/scripting/classes/Character.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="character">
+<span id="id1"></span><h1>Character<a class="headerlink" href="#character" title="Permalink to this headline">¶</a></h1>
+<img alt="https://i.imgur.com/yPtYbR6.jpg" src="https://i.imgur.com/yPtYbR6.jpg" />
+<p>Characters represents Actors which can be possessed, can move and interact with world. They are the default Skeletal Mesh Character built for nanos world.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>This page is under construction.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Characters are Skeletal Meshes using Unreal’s Mannequin Skeletal, with animations and interactivity already natively integrated into nanos world. It is possible to import any Skeletal Mesh (which uses Unreal’s Mannequin Skeletal) to this Character.</p>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-THVh docutils container">
+<div class="docutils container">
+<p>Lua</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-THVh active docutils container">
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="kd">local</span> <span class="n">char</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">123</span><span class="p">,</span> <span class="mi">456</span><span class="p">,</span> <span class="mi">789</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="constructor-parameters">
+<h2>Constructor Parameters<a class="headerlink" href="#constructor-parameters" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 45%" />
+<col style="width: 35%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Type</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Default</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>Location</p></td>
+<td><p>Vector(0, 0, 0)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a></p></td>
+<td><p>Rotation</p></td>
+<td><p>Rotation(0, 0, 0)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a></p></td>
+<td><p>SkeletalMesh</p></td>
+<td><p>NanosWorld::SK_Male</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>CollisionType</p></td>
+<td><p>0 (Normal)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>GravityEnabled</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>Health/MaxHealth</p></td>
+<td><p>100</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id2">
+<h2>Usage<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-THVh docutils container">
+<div class="docutils container">
+<p>Lua</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-THVh active docutils container">
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- The following examples are using all Skeletal Meshes which we currently have for examples, including the officials Woman, Man and Mannequin:</span>
+<span class="kd">local</span> <span class="n">Woman</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="s2">&quot;NanosWorld::SK_Female&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Man</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="s2">&quot;NanosWorld::SK_Male&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Mannequin</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="s2">&quot;NanosWorld::SK_Mannequin&quot;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">PostApocalyptic</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="s2">&quot;NanosWorld::SK_PostApocalyptic&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">ClassicMale</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="s2">&quot;NanosWorld::SK_ClassicMale&quot;</span><span class="p">)</span>
+
+<span class="c1">-- Adds Clothes to Man. Note: some Meshes only supports a specific Mesh (Men/Woman)</span>
+<span class="n">Man</span><span class="p">:</span><span class="n">AddSkeletalMeshAttached</span><span class="p">(</span><span class="s2">&quot;shirt&quot;</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::SK_Shirt&quot;</span><span class="p">)</span> <span class="c1">-- Men only</span>
+<span class="n">Man</span><span class="p">:</span><span class="n">AddSkeletalMeshAttached</span><span class="p">(</span><span class="s2">&quot;shirt&quot;</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::SK_Underwear&quot;</span><span class="p">)</span> <span class="c1">-- Men only</span>
+<span class="n">Man</span><span class="p">:</span><span class="n">AddSkeletalMeshAttached</span><span class="p">(</span><span class="s2">&quot;pants&quot;</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::SK_Pants&quot;</span><span class="p">)</span> <span class="c1">-- Men only</span>
+<span class="n">Man</span><span class="p">:</span><span class="n">AddSkeletalMeshAttached</span><span class="p">(</span><span class="s2">&quot;shoes&quot;</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::SK_Shoes_01&quot;</span><span class="p">)</span>
+<span class="n">Man</span><span class="p">:</span><span class="n">AddSkeletalMeshAttached</span><span class="p">(</span><span class="s2">&quot;shoes&quot;</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::SK_Tie&quot;</span><span class="p">)</span>
+
+<span class="c1">-- Adds Clothes to Woman</span>
+<span class="n">Woman</span><span class="p">:</span><span class="n">AddSkeletalMeshAttached</span><span class="p">(</span><span class="s2">&quot;full&quot;</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::SK_CasualSet&quot;</span><span class="p">)</span> <span class="c1">-- Woman only</span>
+<span class="n">Woman</span><span class="p">:</span><span class="n">AddSkeletalMeshAttached</span><span class="p">(</span><span class="s2">&quot;shoes&quot;</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::SK_Sneakers&quot;</span><span class="p">)</span>
+
+<span class="c1">-- Adds Beard to Man</span>
+<span class="n">Man</span><span class="p">:</span><span class="n">AddStaticMeshAttached</span><span class="p">(</span><span class="s2">&quot;beard&quot;</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::SM_Beard_Extra&quot;</span><span class="p">,</span> <span class="s2">&quot;beard&quot;</span><span class="p">)</span>
+<span class="n">Man</span><span class="p">:</span><span class="n">AddStaticMeshAttached</span><span class="p">(</span><span class="s2">&quot;beard&quot;</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::SM_Beard_Middle&quot;</span><span class="p">,</span> <span class="s2">&quot;beard&quot;</span><span class="p">)</span>
+<span class="n">Man</span><span class="p">:</span><span class="n">AddStaticMeshAttached</span><span class="p">(</span><span class="s2">&quot;beard&quot;</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::SM_Beard_Mustache_01&quot;</span><span class="p">,</span> <span class="s2">&quot;beard&quot;</span><span class="p">)</span>
+<span class="n">Man</span><span class="p">:</span><span class="n">AddStaticMeshAttached</span><span class="p">(</span><span class="s2">&quot;beard&quot;</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::SM_Beard_Mustache_02&quot;</span><span class="p">,</span> <span class="s2">&quot;beard&quot;</span><span class="p">)</span>
+<span class="n">Man</span><span class="p">:</span><span class="n">AddStaticMeshAttached</span><span class="p">(</span><span class="s2">&quot;beard&quot;</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::SM_Beard_Side&quot;</span><span class="p">,</span> <span class="s2">&quot;beard&quot;</span><span class="p">)</span>
+
+<span class="c1">-- Adds Hair to Man</span>
+<span class="n">Man</span><span class="p">:</span><span class="n">AddStaticMeshAttached</span><span class="p">(</span><span class="s2">&quot;hair&quot;</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::SM_Hair_Long&quot;</span><span class="p">,</span> <span class="s2">&quot;hair_male&quot;</span><span class="p">)</span>
+<span class="n">Man</span><span class="p">:</span><span class="n">AddStaticMeshAttached</span><span class="p">(</span><span class="s2">&quot;hair&quot;</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::SM_Hair_Short&quot;</span><span class="p">,</span> <span class="s2">&quot;hair_male&quot;</span><span class="p">)</span>
+
+<span class="c1">-- Adds Hair to Woman</span>
+<span class="n">Woman</span><span class="p">:</span><span class="n">AddStaticMeshAttached</span><span class="p">(</span><span class="s2">&quot;hair&quot;</span><span class="p">,</span> <span class="s2">&quot;NanosWorld::SM_Hair_Kwang&quot;</span><span class="p">,</span> <span class="s2">&quot;hair_female&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 10%" />
+<col style="width: 35%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Returns</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>AddSkeletalMeshAttached(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> ID, <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> StaticMeshPath)</p></td>
+<td><p>Spawns and Attaches a SkeletalMesh into this Character, the SkeletalMesh must have the same Skeletal used by the Character Mesh, and will follow all animations from it. Uses a custom ID to be used for removing it further</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>AddStaticMeshAttached(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> ID, <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> StaticMeshPath, <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> Socket = “”, <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> RelativeLocation = Vector(), <a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a> RelativeRotation = Rotator())</p></td>
+<td><p>Spawns and Attaches a StaticMesh into this Character in a Socket with relative Location and Rotation. Uses a custom ID to be used for removing it further</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>Drop()</p></td>
+<td><p>Drops any Pickable the Character is holding</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>EnterVehicle(<a class="reference internal" href="Vehicle.html#vehicle"><span class="std std-ref">Vehicle</span></a>, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> Seat)</p></td>
+<td><p>Enters the Vehicle at Seat (0 - Driver)</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>GrabProp(<a class="reference internal" href="Prop.html#prop"><span class="std std-ref">Prop</span></a>)</p></td>
+<td><p>Gives a Prop to the Character</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>LeaveVehicle()</p></td>
+<td><p>Leaves the current Vehicle</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>LookAt(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> Location)</p></td>
+<td><p>AI: Tries to make this Character to look at Location</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>MoveTo(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> Location, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> AcceptanceRadius = 50)</p></td>
+<td><p>AI: Makes this Character to walk to the Location</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>PickUp(<a class="reference internal" href="Item.html#item"><span class="std std-ref">Item</span></a>/<a class="reference internal" href="Grenade.html#grenade"><span class="std std-ref">Grenade</span></a>/<a class="reference internal" href="Weapon.html#weapon"><span class="std std-ref">Weapon</span></a>)</p></td>
+<td><p>Gives a Item/Grenade/Weapon (Pickable) to the Character</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>PlayAnimation(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> AnimationPath, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> SlotType = 0, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> LoopIndefinitely = false)</p></td>
+<td><p>Plays an Animation Montage on this character</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>RandomizeCustomization()</p></td>
+<td><p>Randomize all character customizations</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>RemoveSkeletalMeshAttached(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> ID)</p></td>
+<td><p>Removes, if existing, a SkeletalMesh from this Character given it’s custom ID</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>RemoveStaticMeshAttached(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> ID)</p></td>
+<td><p>Removes, if existing, a StaticMesh from this Character given it’s custom ID</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>Respawn()</p></td>
+<td><p>Respawns the Character, fullying it’s Health and moving it to it’s Initial Location</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetMesh(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> SkeletalMeshAsset)</p></td>
+<td><p>Changes the Character Mesh on the fly</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetCameraMode(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> CameraMode)</p></td>
+<td><p>Sets the Camera Mode (0 - FPS and TPS, 1 = FPS only, 2 = TPS only)</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetCanCrouch(<a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a>)</p></td>
+<td><p>Sets if this Character is allowed to Crouch and to Prone</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetCanSprint(<a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a>)</p></td>
+<td><p>Sets if this Character is allowed to Sprint</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetCanGrabProps(<a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a>)</p></td>
+<td><p>Sets if this Character is allowed to Grab any Prop</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetCanPickupPickables(<a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a>)</p></td>
+<td><p>Sets if this Character is allowed to Pick up any Pickable (Weapon, Grenade, Item…)</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetCapsuleSize(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> Radius, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> HalfHeight)</p></td>
+<td><p>Sets this Character’s Capsule size (will affect Camera location and Character’s collision) - default is (42, 96)</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetHealth(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> NewHealth)</p></td>
+<td><p>Sets the Health of this Character. If the character is dead, respawns it with full health</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetMaxHealth(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> NewMaxHealth)</p></td>
+<td><p>Sets the MaxHealth of this Character</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetMorphTarget(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> ID, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> Value)</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetMovementEnabled(<a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a>)</p></td>
+<td><p>Enables/Disables Character’s Movement</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetRagdollMode(<a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a>)</p></td>
+<td><p>Sets Character Ragdoll Mode</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetScalarParameter(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> ID, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> Value)</p></td>
+<td><p>Sets a Scalar Material parameter to this Character</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetSpeedMultiplier(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> Multiplier)</p></td>
+<td><p>1 = normal</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetTeam(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> Team)</p></td>
+<td><p>Sets a Team which will disable damaging same Team Members. 0 for Neutral</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetVectorParameter(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> ID, <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> Value)</p></td>
+<td><p>Sets a Vector Material parameter to this Character’s Material</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetViewMode(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a>)</p></td>
+<td><p>Sets Character View Mode (0 - FPS, 1 TPS1, 2 - TPS2, 3 - TPS3)</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetWeaponAimMode(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> State)</p></td>
+<td><p>0 - None, 1 - ADS (FPS), 2 - ZoomedZoom (TPS), 3 - Zoomed, 4 - ZoomedFar</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>StopAnimation(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> AnimationPath = “”)</p></td>
+<td><p>Stops an Animation Montage on this character</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>UnGrabProp()</p></td>
+<td><p>UnGrabs/Drops the Prop the Character is holding</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>IsInRagdollMode()</p></td>
+<td><p>Gets Character Ragdoll Mode</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>IsMovementEnabled()</p></td>
+<td><p>Gets Character Movement Enabled</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a></p></td>
+<td><p>GetMesh()</p></td>
+<td><p>Gets the Mesh Asset name</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a></p></td>
+<td><p>GetControlRotation()</p></td>
+<td><p>Gets the rotation this character is looking at</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="Prop.html#prop"><span class="std std-ref">Prop</span></a></p></td>
+<td><p>GetGrabbedProp()</p></td>
+<td><p>Gets the Grabbing Prop</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetHealth()</p></td>
+<td><p>Gets the Character’s Health.</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetMaxHealth()</p></td>
+<td><p>Gets the Character’s MaxHealth.</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetMorphTarget(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> ID)</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Actor</p></td>
+<td><p>GetPicked()</p></td>
+<td><p>Gets the holding Picked Item/Grenade/Weapon</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="Player.html#player"><span class="std std-ref">Player</span></a></p></td>
+<td><p>GetPlayer()</p></td>
+<td><p>Gets the Player controlling this Character</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetScalarParameter(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> ID)</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetSpeedMultiplier()</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetTeam()</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetVectorParameter(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> ID)</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="Vehicle.html#vehicle"><span class="std std-ref">Vehicle</span></a></p></td>
+<td><p>GetVehicle()</p></td>
+<td><p>Gets the Vehicle the Character is on</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetViewMode()</p></td>
+<td><p>Gets Character View Mode</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="functions-inherited-from-actor">
+<h3>Functions (Inherited from Actor)<a class="headerlink" href="#functions-inherited-from-actor" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 10%" />
+<col style="width: 35%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Returns</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>AddImpulse(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> Force)</p></td>
+<td><p>Applies a Force in world coordinate on this Actor (the force is applied on Client side, by the (in most of cases) the closest player of this object)</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>AttachTo(Actor Other, <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> BoneName, <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> RelativeLocation, <a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a> RelativeRotation)</p></td>
+<td><p>Attaches this Actor to any other Actor with a Relative Offset/Rotation</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>Destroy()</p></td>
+<td><p>Destroys this Actor</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetCollision(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> CollisionType)</p></td>
+<td><p>Sets the actor’s collision (0 - Normal, 1 - Static Only, 2 - No Collision)</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetGravityEnabled(<a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> NewGravity)</p></td>
+<td><p>Sets the actor’s gravity enabled</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="client-only-label" class="client-only-label" src="../../_images/client-only.svg" /></p></td>
+<td></td>
+<td><p>SetHighlightEnabled(<a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> Enabled)</p></td>
+<td><p>Sets if this Actors is Highlighting</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetInitialLocation(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> NewInitialLocation)</p></td>
+<td><p>Sets the initial location</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetLocation(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> NewLocation)</p></td>
+<td><p>Sets the actor’s location in the game world</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetRotation(<a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a> NewRotation)</p></td>
+<td><p>Sets the actor’s rotation in the game world</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetScale(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> Scale)</p></td>
+<td><p>Sets the actor’s scale</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetTintColor(<a class="reference internal" href="../utility/Color.html#color"><span class="std std-ref">Color</span></a> NewTintColor)</p></td>
+<td><p>Sets the tint color, for completely paint an object, multiply the color by 10 or 100</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>SetValue(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> Key, any Value)</p></td>
+<td><p>Sets a value in this entity, which can be accessed by any package (local only)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>TranslateTo(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> Location, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> Speed)</p></td>
+<td><p>Smoothly moves this actor to a Location with a certain Speed</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>RotateTo(<a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a> Rotation, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> Speed)</p></td>
+<td><p>Smoothly rotates this actor to a Rotation with a certain Speed</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>IsGravityEnabled()</p></td>
+<td><p>Gets the actor’s gravity enabled</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>IsValid()</p></td>
+<td><p>Returns if this is Valid</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetCollision()</p></td>
+<td><p>Gets the current actor’s collision</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetID()</p></td>
+<td><p>Gets the network ID of this entity (same in both client and server)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetLocation()</p></td>
+<td><p>Get the actor’s position in the game world</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetInitialLocation()</p></td>
+<td><p>Gets the initial location</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a></p></td>
+<td><p>GetRotation()</p></td>
+<td><p>Gets the actor’s rotation in the game world</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetScale()</p></td>
+<td><p>Gets the actor’s scale</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../utility/Color.html#color"><span class="std std-ref">Color</span></a></p></td>
+<td><p>GetTintColor()</p></td>
+<td><p>Gets the Tint Color</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a></p></td>
+<td><p>GetType()</p></td>
+<td><p>Returns the type of this Actor</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>any</p></td>
+<td><p>GetValue(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> Key)</p></td>
+<td><p>Gets a value given a key</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="events">
+<h2>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Arguments</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Death</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self</p></td>
+<td><p>When Character Dies</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Drop</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="Item.html#item"><span class="std std-ref">Item</span></a>/<a class="reference internal" href="Grenade.html#grenade"><span class="std std-ref">Grenade</span></a>/<a class="reference internal" href="Weapon.html#weapon"><span class="std std-ref">Weapon</span></a> object, <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> WasTriggeredByPlayer</p></td>
+<td><p>When Character drops anything</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>EnterVehicle</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="Vehicle.html#vehicle"><span class="std std-ref">Vehicle</span></a> vehicle</p></td>
+<td><p>When Character enters a vehicle</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>FallingModeChanged</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> OldState, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> NewState</p></td>
+<td><p>0 - None, 1 - Jumping, 2 - Climbing, 3 - Vaulting, 4 - Falling, 5 - HighFalling, 6 - Parachuting, 7 - SkyDiving</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Fire</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="Weapon.html#weapon"><span class="std std-ref">Weapon</span></a> weapon</p></td>
+<td><p>When Character fires a Weapon</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>GaitModeChanged</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> OldState, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> NewState</p></td>
+<td><p>0 - None, 1 - Walking, 2 - Sprinting</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>GrabProp</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="Prop.html#prop"><span class="std std-ref">Prop</span></a> prop</p></td>
+<td><p>When Character grabs up a Prop</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td><p>Interact</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="Item.html#item"><span class="std std-ref">Item</span></a>/<a class="reference internal" href="Grenade.html#grenade"><span class="std std-ref">Grenade</span></a>/<a class="reference internal" href="Weapon.html#weapon"><span class="std std-ref">Weapon</span></a> object</p></td>
+<td><p>When a Character interacts with an object (i.e. try to pick it up) - return false to prevent it</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>LeaveVehicle</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="Vehicle.html#vehicle"><span class="std std-ref">Vehicle</span></a> vehicle</p></td>
+<td><p>When Character leaves a vehicle</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>MoveCompleted</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> Success</p></td>
+<td><p>Called when AI reaches it’s destination, or when it fails</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>PickUp</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="Item.html#item"><span class="std std-ref">Item</span></a>/<a class="reference internal" href="Grenade.html#grenade"><span class="std std-ref">Grenade</span></a>/<a class="reference internal" href="Weapon.html#weapon"><span class="std std-ref">Weapon</span></a> object</p></td>
+<td><p>When Character picks up anything</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Possessed</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="Player.html#player"><span class="std std-ref">Player</span></a> possesser</p></td>
+<td><p>When Character is possessed</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Punch</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self</p></td>
+<td><p>When Character punches</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>RagdollModeChanged</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> OldState, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> NewState</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Reload</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="Weapon.html#weapon"><span class="std std-ref">Weapon</span></a> weapon, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> AmmoToReload</p></td>
+<td><p>When Character reloads a weapon</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Respawn</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self</p></td>
+<td><p>When Character Respawns</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>StanceModeChanged</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> OldState, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> NewState</p></td>
+<td><p>0 - None, 1 - Standing, 2 - Crouching, 3 - Proning</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>SwimmingModeChanged</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> OldState, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> NewState</p></td>
+<td><p>0 - None, 1 - Superficie, 2 - Underwater</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>TakeDamage</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> damage, <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> bone, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> type (0 - Shot, 1 - Explosion), <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> FromDirection, <a class="reference internal" href="Player.html#player"><span class="std std-ref">Player</span></a> Instigator</p></td>
+<td><p>When Character takes Damage</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>UnGrabProp</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="Prop.html#prop"><span class="std std-ref">Prop</span></a> prop</p></td>
+<td><p>When Character drops a Prop</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>UnPossessed</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="Player.html#player"><span class="std std-ref">Player</span></a> old_possesser</p></td>
+<td><p>When Character is unpossessed</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>ViewModeChanged</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> OldState, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> NewState</p></td>
+<td><p>0 - FPS, 1 - TPS1, 2 - TPS2, 3 - TPS3</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>WeaponAimModeChanged</p></td>
+<td><p><a class="reference internal" href="#character"><span class="std std-ref">Character</span></a> self, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> OldState, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> NewState</p></td>
+<td><p>0 - None, 1 - ADS (FPS), 2 - ZoomedZoom (TPS), 3 - Zoomed, 4 - ZoomedFar</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="events-inherited-from-actor">
+<h3>Events (Inherited from Actor)<a class="headerlink" href="#events-inherited-from-actor" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Arguments</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Destroy</p></td>
+<td><p>Entity actor</p></td>
+<td><p>Triggered when an Entity is Destroyed</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Spawn</p></td>
+<td><p>Entity actor</p></td>
+<td><p>Triggered when an Entity is Spawned/Created</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="customization">
+<h2>Customization<a class="headerlink" href="#customization" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 27%" />
+<col style="width: 6%" />
+<col style="width: 27%" />
+<col style="width: 6%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="2"><p>Morph Targets</p></th>
+<th class="head" colspan="2"><p>Scalar Parameters</p></th>
+<th class="head" colspan="2"><p>Vector Parameters</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ID</p></td>
+<td><p>NAME</p></td>
+<td><p>ID</p></td>
+<td><p>NAME</p></td>
+<td><p>ID</p></td>
+<td><p>NAME</p></td>
+</tr>
+<tr class="row-odd"><td><p>00</p></td>
+<td><p>nose1</p></td>
+<td><p>00</p></td>
+<td><p>BaseColorPower</p></td>
+<td><p>00</p></td>
+<td><p>LipstickTint</p></td>
+</tr>
+<tr class="row-even"><td><p>01</p></td>
+<td><p>nose2</p></td>
+<td><p>01</p></td>
+<td><p>Muscular</p></td>
+<td><p>01</p></td>
+<td><p>BrowsTint</p></td>
+</tr>
+<tr class="row-odd"><td><p>02</p></td>
+<td><p>brows</p></td>
+<td></td>
+<td></td>
+<td><p>02</p></td>
+<td><p>BlushTint</p></td>
+</tr>
+<tr class="row-even"><td><p>03</p></td>
+<td><p>mouth</p></td>
+<td></td>
+<td></td>
+<td><p>03</p></td>
+<td><p>EyeShadowTint</p></td>
+</tr>
+<tr class="row-odd"><td><p>04</p></td>
+<td><p>fat</p></td>
+<td></td>
+<td></td>
+<td><p>04</p></td>
+<td><p>UnderwearTint</p></td>
+</tr>
+<tr class="row-even"><td><p>05</p></td>
+<td><p>nose3</p></td>
+<td></td>
+<td></td>
+<td><p>05</p></td>
+<td><p>HairTint</p></td>
+</tr>
+<tr class="row-odd"><td><p>06</p></td>
+<td><p>chin</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>07</p></td>
+<td><p>face</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>08</p></td>
+<td><p>nose4</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>09</p></td>
+<td><p>skinny</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>jaw</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>brows2</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>angry</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>smirk</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>smirk2</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>smirk3</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>smile</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>17</p></td>
+<td><p>nose6</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p>jaw_forward</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>19</p></td>
+<td><p>lips</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>20</p></td>
+<td><p>lips2</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>21</p></td>
+<td><p>mouth_wide</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>22</p></td>
+<td><p>eyes1</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>23</p></td>
+<td><p>eyes2</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>24</p></td>
+<td><p>eyes3</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>25</p></td>
+<td><p>eyes4</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>26</p></td>
+<td><p>eyes_retraction</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>27</p></td>
+<td><p>lips3</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>28</p></td>
+<td><p>eyes5</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>29</p></td>
+<td><p>nose7</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>30</p></td>
+<td><p>forehead</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>31</p></td>
+<td><p>bodyfat</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="character-s-skeleton-bone-names">
+<h2>Character’s Skeleton Bone Names<a class="headerlink" href="#character-s-skeleton-bone-names" title="Permalink to this headline">¶</a></h2>
+<p>Ugly list I know</p>
+<ul>
+<li><p>Root</p>
+<ul>
+<li><p>Pelvis</p>
+<ul>
+<li><p>spine_01</p>
+<ul>
+<li><p>spine_02</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>spine_03</p>
+<ul>
+<li><p>clavicle_l</p>
+<ul>
+<li><p>UpperArm_L</p>
+<ul>
+<li><p>lowerarm_l</p>
+<ul>
+<li><p>Hand_L</p>
+<ul>
+<li><p>index_01_l</p>
+<ul>
+<li><p>index_02_l</p>
+<ul>
+<li><p>index_03_l</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>middle_01_l</p>
+<ul>
+<li><p>middle_02_l</p>
+<ul>
+<li><p>middle_03_l</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>pinky_01_l</p>
+<ul>
+<li><p>pinky_02_l</p>
+<ul>
+<li><p>pinky_03_l</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>ring_01_l</p>
+<ul>
+<li><p>ring_02_l</p>
+<ul>
+<li><p>ring_03_l</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>thumb_01_l</p>
+<ul>
+<li><p>thumb_02_l</p>
+<ul>
+<li><p>thumb_03_l</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>weapon_l</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>clavicle_r</p>
+<ul>
+<li><p>UpperArm_R</p>
+<ul>
+<li><p>lowerarm_r</p>
+<ul>
+<li><p>Hand_R</p>
+<ul>
+<li><p>index_01_r</p>
+<ul>
+<li><p>index_02_r</p>
+<ul>
+<li><p>index_03_r</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>middle_01_r</p>
+<ul>
+<li><p>middle_02_r</p>
+<ul>
+<li><p>middle_03_r</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>pinky_01_r</p>
+<ul>
+<li><p>pinky_02_r</p>
+<ul>
+<li><p>pinky_03_r</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>ring_01_r</p>
+<ul>
+<li><p>ring_02_r</p>
+<ul>
+<li><p>ring_03_r</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>thumb_01_r</p>
+<ul>
+<li><p>thumb_02_r</p>
+<ul>
+<li><p>thumb_03_r</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>weapon_r</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>neck_01</p>
+<ul>
+<li><p>Head</p>
+<ul>
+<li><p>LeftEye</p></li>
+<li><p>RightEye</p></li>
+<li><p>LeftLidUp</p></li>
+<li><p>LeftLidLow</p></li>
+<li><p>RightLidUp</p></li>
+<li><p>RightLitLow</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p>Thigh_L</p>
+<ul class="simple">
+<li><p>calf_l</p>
+<ul>
+<li><p>Foot_L</p>
+<ul>
+<li><p>ball_l</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Thigh_R</p>
+<ul class="simple">
+<li><p>calf_r</p>
+<ul>
+<li><p>Foot_R</p>
+<ul>
+<li><p>ball_r</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="File.html" class="btn btn-neutral float-right" title="File" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Classes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, nanos GbR
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

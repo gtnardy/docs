@@ -1,0 +1,454 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Basic HUD (Canvas) &mdash; nanos.world Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/style.css?v2" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css?v1" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script type="text/javascript" src="../_static/sphinx_tabs/tabs.js"></script>
+        <script type="text/javascript" src="../_static/js/script.js?v1"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Basic HUD (HTML)" href="BasicHUDHTML.html" />
+    <link rel="prev" title="Tutorials &amp; Examples" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../About.html">About us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ContributingToDocs.html">Contributing to the Docs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/AssetsQuickStart.html">Assets Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/ScriptingQuickStart.html">Scripting Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/ServerManual.html">Server Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/WebUIQuickStart.html">WebUI Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutorials &amp; Examples</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Basic HUD (Canvas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BasicHUDHTML.html">Basic HUD (HTML)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ChatColors.html">Chat Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MonsterTruck.html">Monster Truck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NameTags.html">Name Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PlayAsProp.html">Play as Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PropShooter.html">Prop Shooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PropRain.html">Prop Rain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ScoreHitLog.html">Score, Kill &amp; Hit Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trace.html">Traces / Raycasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WeaponFlashlight.html">Weapon Flashlight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WeaponScope.html">Weapon Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="XRay.html">X-Ray / Highlight</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Scripting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/classes/index.html">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Character.html">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Grenade.html">Grenade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Item.html">Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Light.html">Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Particle.html">Particle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Player.html">Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Prop.html">Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Sound.html">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/TextRender.html">Text Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Vehicle.html">Vehicle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Weapon.html">Weapon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/WebUI.html">WebUI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/static_classes/index.html">Static Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Assets.html">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Client.html">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/NanosWorld.html">NanosWorld</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Package.html">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Render.html">Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Server.html">Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Timer.html">Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/World.html">World</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/utility/index.html">Utility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/JSON.html">JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Rotator.html">Rotator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Vector2D.html">Vector2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/NanosMathLibrary.html">NanosMathLibrary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/Glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/Modules.html">Modules</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assets &amp; Modding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modding/index.html">Modding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modding/AssetsDevelopmentKit.html">Assets Development Kit - ADK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modding/Characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modding/MapsAndLevels.html">Maps &amp; Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modding/StaticMeshes.html">Static Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/NanosWorldDefaultPack.html">Nanos World Default Assets Pack</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">nanos.world Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Tutorials &amp; Examples</a> &raquo;</li>
+        
+      <li>Basic HUD (Canvas)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/nanos-world/docs/blob/master/tutorials/BasicHUDCanvas.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="basic-hud-canvas">
+<span id="basichudcanvas"></span><h1>Basic HUD (Canvas)<a class="headerlink" href="#basic-hud-canvas" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>There is a new and modern way of making UIs, please check it out: <a class="reference internal" href="../getting_started/WebUIQuickStart.html#webuiquickstart"><span class="std std-ref">WebUI Quick Start</span></a>!</p>
+</div>
+<p>This sample code shows how to add a basic HUD using <a class="reference internal" href="../scripting/static_classes/Render.html#render"><span class="std std-ref">Render</span></a>’s Canvas features, to display the character’s Health and Ammo.</p>
+<img alt="https://i.imgur.com/WE3rqAL.png" src="https://i.imgur.com/WE3rqAL.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following code runs on Client.</p>
+</div>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-THVh docutils container">
+<div class="docutils container">
+<p>Lua</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-THVh active docutils container">
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Variable to stores the Health Canvas Group ID of this UI (to be used to clear all canvas with that ID when the package unloads)</span>
+<span class="n">health_group_id</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">ammo_group_id</span> <span class="o">=</span> <span class="mi">11</span>
+
+<span class="c1">-- Variable to stores the Canvas Item ID of Health UI (to be used to edit a specific Canvas Item (Text))</span>
+<span class="n">health_item_id</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="n">ammo_clip_item_id</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="n">ammo_bag_item_id</span> <span class="o">=</span> <span class="kc">nil</span>
+
+<span class="c1">-- When LocalPlayer spawns, sets an event on it to trigger when we possesses a new character, to store the local controlled character locally. This event is only called once, see Package:on(&quot;Load&quot;) to load it when reloading a package</span>
+<span class="n">NanosWorld</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;SpawnLocalPlayer&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">local_player</span><span class="p">)</span>
+    <span class="n">local_player</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;Possess&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+        <span class="n">UpdateLocalCharacter</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+    <span class="kr">end</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+
+<span class="c1">-- When package loads, verify if LocalPlayer already exists (eg. when reloading the package), then try to get and store it&#39;s controlled character</span>
+<span class="n">Package</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;Load&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="n">NanosWorld</span><span class="p">:</span><span class="n">GetLocalPlayer</span><span class="p">()</span> <span class="o">~=</span> <span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
+        <span class="n">UpdateLocalCharacter</span><span class="p">(</span><span class="n">NanosWorld</span><span class="p">:</span><span class="n">GetLocalPlayer</span><span class="p">():</span><span class="n">GetControlledCharacter</span><span class="p">())</span>
+    <span class="kr">end</span>
+<span class="kr">end</span><span class="p">)</span>
+
+<span class="c1">-- Function to set all needed events on local character (to update the UI when it takes damage or dies)</span>
+<span class="kr">function</span> <span class="nf">UpdateLocalCharacter</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+    <span class="c1">-- Verifies if character is not nil (eg. when GetControllerCharacter() doesn&#39;t return a character)</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="n">character</span> <span class="o">==</span> <span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span> <span class="kr">return</span> <span class="kr">end</span>
+
+    <span class="c1">-- Updates the UI with the current character&#39;s health</span>
+    <span class="n">UpdateHealth</span><span class="p">(</span><span class="n">character</span><span class="p">:</span><span class="n">GetHealth</span><span class="p">())</span>
+
+    <span class="c1">-- Sets on character an event to update the health&#39;s UI after it takes damage</span>
+    <span class="n">character</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;TakeDamage&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">damage</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">bone</span><span class="p">,</span> <span class="n">from_direction</span><span class="p">,</span> <span class="n">instigator</span><span class="p">)</span>
+        <span class="n">UpdateHealth</span><span class="p">(</span><span class="n">character</span><span class="p">:</span><span class="n">GetHealth</span><span class="p">())</span>
+    <span class="kr">end</span><span class="p">)</span>
+
+    <span class="c1">-- Sets on character an event to update the health&#39;s UI after it dies</span>
+    <span class="n">character</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;Death&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
+        <span class="n">UpdateHealth</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="kr">end</span><span class="p">)</span>
+
+    <span class="c1">-- Try to get if the character is holding any weapon</span>
+    <span class="kd">local</span> <span class="n">current_picked_item</span> <span class="o">=</span> <span class="n">character</span><span class="p">:</span><span class="n">GetPicked</span><span class="p">()</span>
+
+    <span class="c1">-- If so, update the UI</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="n">current_picked_item</span> <span class="ow">and</span> <span class="n">current_picked_item</span><span class="p">:</span><span class="n">GetType</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Weapon&quot;</span><span class="p">)</span> <span class="kr">then</span>
+        <span class="n">UpdateAmmo</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="n">current_picked_item</span><span class="p">:</span><span class="n">GetAmmoClip</span><span class="p">(),</span> <span class="n">current_picked_item</span><span class="p">:</span><span class="n">GetAmmoBag</span><span class="p">())</span>
+    <span class="kr">end</span>
+
+    <span class="c1">-- Sets on character an event to update his grabbing weapon (to show ammo on UI)</span>
+    <span class="n">character</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;PickUp&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">object</span><span class="p">)</span>
+        <span class="kr">if</span> <span class="p">(</span><span class="n">object</span><span class="p">:</span><span class="n">GetType</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Weapon&quot;</span><span class="p">)</span> <span class="kr">then</span>
+            <span class="n">UpdateAmmo</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="n">object</span><span class="p">:</span><span class="n">GetAmmoClip</span><span class="p">(),</span> <span class="n">object</span><span class="p">:</span><span class="n">GetAmmoBag</span><span class="p">())</span>
+        <span class="kr">end</span>
+    <span class="kr">end</span><span class="p">)</span>
+
+    <span class="c1">-- Sets on character an event to remove the ammo ui when he drops it&#39;s weapon</span>
+    <span class="n">character</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;Drop&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">object</span><span class="p">)</span>
+        <span class="n">UpdateAmmo</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span>
+    <span class="kr">end</span><span class="p">)</span>
+
+    <span class="c1">-- Sets on character an event to update the UI when he fires</span>
+    <span class="n">character</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;Fire&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">weapon</span><span class="p">)</span>
+        <span class="n">UpdateAmmo</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="n">weapon</span><span class="p">:</span><span class="n">GetAmmoClip</span><span class="p">(),</span> <span class="n">weapon</span><span class="p">:</span><span class="n">GetAmmoBag</span><span class="p">())</span>
+    <span class="kr">end</span><span class="p">)</span>
+
+    <span class="c1">-- Sets on character an event to update the UI when he reloads the weapon</span>
+    <span class="n">character</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;Reload&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">weapon</span><span class="p">,</span> <span class="n">ammo_to_reload</span><span class="p">)</span>
+        <span class="n">UpdateAmmo</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="n">weapon</span><span class="p">:</span><span class="n">GetAmmoClip</span><span class="p">(),</span> <span class="n">weapon</span><span class="p">:</span><span class="n">GetAmmoBag</span><span class="p">())</span>
+    <span class="kr">end</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="c1">-- Function to update the Ammo&#39;s UI</span>
+<span class="kr">function</span> <span class="nf">UpdateAmmo</span><span class="p">(</span><span class="n">enable_ui</span><span class="p">,</span> <span class="n">ammo</span><span class="p">,</span> <span class="n">ammo_bag</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="n">enable_ui</span><span class="p">)</span> <span class="kr">then</span>
+        <span class="kr">if</span> <span class="p">(</span><span class="n">ammo_clip_item_id</span> <span class="o">==</span> <span class="kc">nil</span> <span class="ow">and</span> <span class="n">ammo_bag_item_id</span> <span class="o">==</span> <span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
+            <span class="c1">-- Creates a new Text Canvas to display the character&#39;s Health, we choose the ID ammo_group_id = 11 arbitrarily for being our Health Canvas ID (to be able to edit it later on)</span>
+            <span class="n">ammo_clip_item_id</span> <span class="o">=</span> <span class="n">Render</span><span class="p">:</span><span class="n">AddText</span><span class="p">(</span><span class="n">ammo_group_id</span><span class="p">,</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">ammo</span><span class="p">),</span> <span class="n">Render</span><span class="p">:</span><span class="n">GetViewportSize</span><span class="p">()</span> <span class="o">-</span> <span class="n">Vector2D</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="n">Color</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="n">Vector2D</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="kc">true</span><span class="p">,</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+            <span class="n">ammo_bag_item_id</span> <span class="o">=</span> <span class="n">Render</span><span class="p">:</span><span class="n">AddText</span><span class="p">(</span><span class="n">ammo_group_id</span><span class="p">,</span> <span class="s2">&quot;/ &quot;</span> <span class="o">..</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">ammo_bag</span><span class="p">),</span> <span class="n">Render</span><span class="p">:</span><span class="n">GetViewportSize</span><span class="p">()</span> <span class="o">-</span> <span class="n">Vector2D</span><span class="p">(</span><span class="mi">140</span><span class="p">,</span> <span class="mi">87</span><span class="p">),</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="n">Color</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="n">Vector2D</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="kc">true</span><span class="p">,</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+        <span class="kr">else</span>
+            <span class="c1">-- Otherwise if a Text Canvas is already created, then just update it (more performatic than deleting and creating a new one all the time)</span>
+            <span class="n">Render</span><span class="p">:</span><span class="n">UpdateItemText</span><span class="p">(</span><span class="n">ammo_group_id</span><span class="p">,</span> <span class="n">ammo_clip_item_id</span><span class="p">,</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">ammo</span><span class="p">))</span>
+            <span class="n">Render</span><span class="p">:</span><span class="n">UpdateItemText</span><span class="p">(</span><span class="n">ammo_group_id</span><span class="p">,</span> <span class="n">ammo_bag_item_id</span><span class="p">,</span> <span class="s2">&quot;/ &quot;</span> <span class="o">..</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">ammo_bag</span><span class="p">))</span>
+        <span class="kr">end</span>
+    <span class="kr">else</span>
+        <span class="n">Render</span><span class="p">:</span><span class="n">ClearItems</span><span class="p">(</span><span class="n">ammo_group_id</span><span class="p">)</span>
+        <span class="n">ammo_clip_item_id</span> <span class="o">=</span> <span class="kc">nil</span>
+        <span class="n">ammo_bag_item_id</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="c1">-- Function to update the Health&#39;s UI</span>
+<span class="kr">function</span> <span class="nf">UpdateHealth</span><span class="p">(</span><span class="n">health</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="n">health_item_id</span> <span class="o">==</span> <span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
+        <span class="c1">-- Creates a new Text Canvas to display the character&#39;s Health, we choose the ID health_group_id = 10 arbitrarily for being our Health Canvas ID (to be able to edit it later on)</span>
+        <span class="n">health_item_id</span> <span class="o">=</span> <span class="n">Render</span><span class="p">:</span><span class="n">AddText</span><span class="p">(</span><span class="n">health_group_id</span><span class="p">,</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">health</span><span class="p">),</span> <span class="n">Vector2D</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">Render</span><span class="p">:</span><span class="n">GetViewportSize</span><span class="p">().</span><span class="n">Y</span> <span class="o">-</span> <span class="mi">100</span><span class="p">),</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="n">Color</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="n">Vector2D</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="kc">true</span><span class="p">,</span> <span class="n">Color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+    <span class="kr">else</span>
+        <span class="c1">-- Otherwise if a Text Canvas is already created, then just update it (more performatic than deleting and creating a new one all the time)</span>
+        <span class="n">Render</span><span class="p">:</span><span class="n">UpdateItemText</span><span class="p">(</span><span class="n">health_group_id</span><span class="p">,</span> <span class="n">health_item_id</span><span class="p">,</span> <span class="nb">tostring</span><span class="p">(</span><span class="n">health</span><span class="p">))</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="c1">-- Clear the UI when the package unloads</span>
+<span class="n">Package</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;Unload&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
+    <span class="n">Render</span><span class="p">:</span><span class="n">ClearItems</span><span class="p">(</span><span class="n">health_group_id</span><span class="p">)</span>
+    <span class="n">Render</span><span class="p">:</span><span class="n">ClearItems</span><span class="p">(</span><span class="n">ammo_group_id</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+
+<span class="c1">-- Updates the UI positions when the Viewport (screen) is resized</span>
+<span class="n">Render</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;ViewportResized&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">NewSize</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="n">health_item_id</span> <span class="o">~=</span> <span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
+        <span class="n">Render</span><span class="p">:</span><span class="n">UpdateItemPosition</span><span class="p">(</span><span class="n">health_group_id</span><span class="p">,</span> <span class="n">health_item_id</span><span class="p">,</span> <span class="n">Vector2D</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">Render</span><span class="p">:</span><span class="n">GetViewportSize</span><span class="p">().</span><span class="n">Y</span> <span class="o">-</span> <span class="mi">100</span><span class="p">))</span>
+    <span class="kr">end</span>
+
+    <span class="kr">if</span> <span class="p">(</span><span class="n">ammo_clip_item_id</span> <span class="o">~=</span> <span class="kc">nil</span> <span class="ow">and</span> <span class="n">ammo_bag_item_id</span> <span class="o">~=</span> <span class="kc">nil</span><span class="p">)</span> <span class="kr">then</span>
+        <span class="n">Render</span><span class="p">:</span><span class="n">UpdateItemPosition</span><span class="p">(</span><span class="n">ammo_group_id</span><span class="p">,</span> <span class="n">ammo_clip_item_id</span><span class="p">,</span> <span class="n">Render</span><span class="p">:</span><span class="n">GetViewportSize</span><span class="p">()</span> <span class="o">-</span> <span class="n">Vector2D</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span>
+        <span class="n">Render</span><span class="p">:</span><span class="n">UpdateItemPosition</span><span class="p">(</span><span class="n">ammo_group_id</span><span class="p">,</span> <span class="n">ammo_bag_item_id</span><span class="p">,</span> <span class="n">Render</span><span class="p">:</span><span class="n">GetViewportSize</span><span class="p">()</span> <span class="o">-</span> <span class="n">Vector2D</span><span class="p">(</span><span class="mi">140</span><span class="p">,</span> <span class="mi">87</span><span class="p">))</span>
+    <span class="kr">end</span>
+<span class="kr">end</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="BasicHUDHTML.html" class="btn btn-neutral float-right" title="Basic HUD (HTML)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Tutorials &amp; Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, nanos GbR
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

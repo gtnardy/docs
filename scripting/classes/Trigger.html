@@ -1,0 +1,607 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Trigger &mdash; nanos.world Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/style.css?v2" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css?v1" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script type="text/javascript" src="../../_static/sphinx_tabs/tabs.js"></script>
+        <script type="text/javascript" src="../../_static/js/script.js?v1"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Vehicle" href="Vehicle.html" />
+    <link rel="prev" title="Text Render" href="TextRender.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../About.html">About us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ContributingToDocs.html">Contributing to the Docs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/AssetsQuickStart.html">Assets Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/ScriptingQuickStart.html">Scripting Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/ServerManual.html">Server Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../getting_started/WebUIQuickStart.html">WebUI Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials &amp; Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/BasicHUDCanvas.html">Basic HUD (Canvas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/BasicHUDHTML.html">Basic HUD (HTML)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/ChatColors.html">Chat Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/MonsterTruck.html">Monster Truck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/NameTags.html">Name Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PlayAsProp.html">Play as Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PropShooter.html">Prop Shooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/PropRain.html">Prop Rain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/ScoreHitLog.html">Score, Kill &amp; Hit Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/Trace.html">Traces / Raycasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/WeaponFlashlight.html">Weapon Flashlight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/WeaponScope.html">Weapon Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorials/XRay.html">X-Ray / Highlight</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Scripting</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Classes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Character.html">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Grenade.html">Grenade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Item.html">Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Light.html">Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Particle.html">Particle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Player.html">Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Prop.html">Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sound.html">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TextRender.html">Text Render</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Vehicle.html">Vehicle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Weapon.html">Weapon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WebUI.html">WebUI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../static_classes/index.html">Static Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Assets.html">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Client.html">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/NanosWorld.html">NanosWorld</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Package.html">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Render.html">Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Server.html">Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/Timer.html">Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../static_classes/World.html">World</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../utility/index.html">Utility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/JSON.html">JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Rotator.html">Rotator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/Vector2D.html">Vector2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utility/NanosMathLibrary.html">NanosMathLibrary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Modules.html">Modules</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assets &amp; Modding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modding/index.html">Modding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/AssetsDevelopmentKit.html">Assets Development Kit - ADK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/Characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/MapsAndLevels.html">Maps &amp; Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modding/StaticMeshes.html">Static Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../modding/NanosWorldDefaultPack.html">Nanos World Default Assets Pack</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">nanos.world Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Classes</a> &raquo;</li>
+        
+      <li>Trigger</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/nanos-world/docs/blob/master/scripting/classes/Trigger.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="trigger">
+<span id="id1"></span><h1>Trigger<a class="headerlink" href="#trigger" title="Permalink to this headline">¶</a></h1>
+<p>A Trigger class is a utility class to trigger events when some Actor enters an Area.</p>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-THVh docutils container">
+<div class="docutils container">
+<p>Lua</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-THVh active docutils container">
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="kd">local</span> <span class="n">MyTrigger</span> <span class="o">=</span> <span class="n">Trigger</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="o">-</span><span class="mi">200</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">500</span><span class="p">),</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">MyTrigger</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;BeginOverlap&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">actorTriggering</span><span class="p">)</span>
+    <span class="n">Package</span><span class="p">:</span><span class="n">Log</span><span class="p">(</span><span class="s2">&quot;Someone entered my Trigger&quot;</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="constructor-parameters">
+<h2>Constructor Parameters<a class="headerlink" href="#constructor-parameters" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 45%" />
+<col style="width: 35%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Type</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Default</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>Location</p></td>
+<td><p>Vector(0, 0, 0)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>Radius</p></td>
+<td><p>100</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>Is Visible</p></td>
+<td><p>true</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../utility/Color.html#color"><span class="std std-ref">Color</span></a></p></td>
+<td><p>Color of the Trigger Sphere (if Visible)</p></td>
+<td><p>Color(1, 0, 0, 1)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 10%" />
+<col style="width: 35%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Returns</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetRadius(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> Radius)</p></td>
+<td><p>Sets the radius of this trigger</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetVisibility(<a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> Visible)</p></td>
+<td><p>Sets if this Trigger is visible as a Sphere</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><a class="reference internal" href="#trigger"><span class="std std-ref">Trigger</span></a> inherits from Actor, but some of the following functions doesn’t have any effect. E.g. <code class="docutils literal notranslate"><span class="pre">SetCollision</span></code>, <code class="docutils literal notranslate"><span class="pre">SetGravityEnabled</span></code>, <code class="docutils literal notranslate"><span class="pre">AddImpulse</span></code>, <code class="docutils literal notranslate"><span class="pre">SetScale</span></code>.</p>
+</div>
+<div class="section" id="functions-inherited-from-actor">
+<h3>Functions (Inherited from Actor)<a class="headerlink" href="#functions-inherited-from-actor" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 10%" />
+<col style="width: 35%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Returns</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>AddImpulse(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> Force)</p></td>
+<td><p>Applies a Force in world coordinate on this Actor (the force is applied on Client side, by the (in most of cases) the closest player of this object)</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>AttachTo(Actor Other, <a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> BoneName, <a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> RelativeLocation, <a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a> RelativeRotation)</p></td>
+<td><p>Attaches this Actor to any other Actor with a Relative Offset/Rotation</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>Destroy()</p></td>
+<td><p>Destroys this Actor</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetCollision(<a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> CollisionType)</p></td>
+<td><p>Sets the actor’s collision (0 - Normal, 1 - Static Only, 2 - No Collision)</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetGravityEnabled(<a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> NewGravity)</p></td>
+<td><p>Sets the actor’s gravity enabled</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="client-only-label" class="client-only-label" src="../../_images/client-only.svg" /></p></td>
+<td></td>
+<td><p>SetHighlightEnabled(<a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a> Enabled)</p></td>
+<td><p>Sets if this Actors is Highlighting</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetInitialLocation(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> NewInitialLocation)</p></td>
+<td><p>Sets the initial location</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetLocation(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> NewLocation)</p></td>
+<td><p>Sets the actor’s location in the game world</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetRotation(<a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a> NewRotation)</p></td>
+<td><p>Sets the actor’s rotation in the game world</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetScale(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> Scale)</p></td>
+<td><p>Sets the actor’s scale</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td></td>
+<td><p>SetTintColor(<a class="reference internal" href="../utility/Color.html#color"><span class="std std-ref">Color</span></a> NewTintColor)</p></td>
+<td><p>Sets the tint color, for completely paint an object, multiply the color by 10 or 100</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>SetValue(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> Key, any Value)</p></td>
+<td><p>Sets a value in this entity, which can be accessed by any package (local only)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>TranslateTo(<a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a> Location, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> Speed)</p></td>
+<td><p>Smoothly moves this actor to a Location with a certain Speed</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>RotateTo(<a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a> Rotation, <a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a> Speed)</p></td>
+<td><p>Smoothly rotates this actor to a Rotation with a certain Speed</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>IsGravityEnabled()</p></td>
+<td><p>Gets the actor’s gravity enabled</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-boolean"><span class="xref std std-term">boolean</span></a></p></td>
+<td><p>IsValid()</p></td>
+<td><p>Returns if this is Valid</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetCollision()</p></td>
+<td><p>Gets the current actor’s collision</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-number"><span class="xref std std-term">number</span></a></p></td>
+<td><p>GetID()</p></td>
+<td><p>Gets the network ID of this entity (same in both client and server)</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetLocation()</p></td>
+<td><p>Get the actor’s position in the game world</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="server-only-label" class="server-only-label" src="../../_images/server-only.svg" /></p></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetInitialLocation()</p></td>
+<td><p>Gets the initial location</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../utility/Rotator.html#rotator"><span class="std std-ref">Rotator</span></a></p></td>
+<td><p>GetRotation()</p></td>
+<td><p>Gets the actor’s rotation in the game world</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../utility/Vector.html#vector"><span class="std std-ref">Vector</span></a></p></td>
+<td><p>GetScale()</p></td>
+<td><p>Gets the actor’s scale</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference internal" href="../utility/Color.html#color"><span class="std std-ref">Color</span></a></p></td>
+<td><p>GetTintColor()</p></td>
+<td><p>Gets the Tint Color</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a></p></td>
+<td><p>GetType()</p></td>
+<td><p>Returns the type of this Actor</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>any</p></td>
+<td><p>GetValue(<a class="reference internal" href="../Glossary.html#term-string"><span class="xref std std-term">string</span></a> Key)</p></td>
+<td><p>Gets a value given a key</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="events">
+<h2>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Arguments</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>BeginOverlap</p></td>
+<td><p><a class="reference internal" href="#trigger"><span class="std std-ref">Trigger</span></a> self, any Actor</p></td>
+<td><p>When an Actor enters this trigger</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>EndOverlap</p></td>
+<td><p><a class="reference internal" href="#trigger"><span class="std std-ref">Trigger</span></a> self, any Actor</p></td>
+<td><p>When an Actor leaves this trigger</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="events-inherited-from-actor">
+<h3>Events (Inherited from Actor)<a class="headerlink" href="#events-inherited-from-actor" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Arguments</strong></p></td>
+<td><p><strong>Description</strong></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Destroy</p></td>
+<td><p>Entity actor</p></td>
+<td><p>Triggered when an Entity is Destroyed</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Spawn</p></td>
+<td><p>Entity actor</p></td>
+<td><p>Triggered when an Entity is Spawned/Created</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="related-tutorials">
+<h2>Related Tutorials<a class="headerlink" href="#related-tutorials" title="Permalink to this headline">¶</a></h2>
+<script>
+        DrawCard(
+                "../../tutorials/PropRain.html",
+                "https://i.imgur.com/0VVlryj.png",
+                "Prop Rain",
+                "A little fun making it rain props when entering a trigger!"
+        );
+</script></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Vehicle.html" class="btn btn-neutral float-right" title="Vehicle" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="TextRender.html" class="btn btn-neutral float-left" title="Text Render" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, nanos GbR
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

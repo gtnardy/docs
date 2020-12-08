@@ -1,0 +1,360 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Assets Development Kit - ADK &mdash; nanos.world Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/style.css?v2" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css?v1" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/script.js?v1"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Characters" href="Characters.html" />
+    <link rel="prev" title="Modding" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../About.html">About us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ContributingToDocs.html">Contributing to the Docs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/AssetsQuickStart.html">Assets Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/ScriptingQuickStart.html">Scripting Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/ServerManual.html">Server Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/WebUIQuickStart.html">WebUI Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials &amp; Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/BasicHUDCanvas.html">Basic HUD (Canvas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/BasicHUDHTML.html">Basic HUD (HTML)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/ChatColors.html">Chat Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/MonsterTruck.html">Monster Truck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/NameTags.html">Name Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/PlayAsProp.html">Play as Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/PropShooter.html">Prop Shooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/PropRain.html">Prop Rain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/ScoreHitLog.html">Score, Kill &amp; Hit Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/Trace.html">Traces / Raycasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/WeaponFlashlight.html">Weapon Flashlight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/WeaponScope.html">Weapon Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/XRay.html">X-Ray / Highlight</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Scripting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/classes/index.html">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Character.html">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Grenade.html">Grenade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Item.html">Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Light.html">Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Particle.html">Particle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Player.html">Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Prop.html">Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Sound.html">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/TextRender.html">Text Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Vehicle.html">Vehicle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Weapon.html">Weapon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/WebUI.html">WebUI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/static_classes/index.html">Static Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Assets.html">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Client.html">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/NanosWorld.html">NanosWorld</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Package.html">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Render.html">Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Server.html">Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Timer.html">Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/World.html">World</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/utility/index.html">Utility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/JSON.html">JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Rotator.html">Rotator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Vector2D.html">Vector2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/NanosMathLibrary.html">NanosMathLibrary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/Glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/Modules.html">Modules</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assets &amp; Modding</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Modding</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Assets Development Kit - ADK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MapsAndLevels.html">Maps &amp; Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="StaticMeshes.html">Static Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="NanosWorldDefaultPack.html">Nanos World Default Assets Pack</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">nanos.world Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Modding</a> &raquo;</li>
+        
+      <li>Assets Development Kit - ADK</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/nanos-world/docs/blob/master/modding/AssetsDevelopmentKit.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="assets-development-kit-adk">
+<span id="assetsdevelopmentkit"></span><h1>Assets Development Kit - ADK<a class="headerlink" href="#assets-development-kit-adk" title="Permalink to this headline">¶</a></h1>
+<p>nanos world provides a fully configurable and ready Unreal Project to help you integrating assets and maps much faster. This project contains Placeholders, Tools and Correct References that must be used in order to create Characters and make proper Physical Materials, for example.</p>
+<div class="section" id="downloading-nanos-world-assets-development-kit-adk">
+<h2>Downloading nanos world Assets Development Kit - ADK<a class="headerlink" href="#downloading-nanos-world-assets-development-kit-adk" title="Permalink to this headline">¶</a></h2>
+<p>Please refer to the official GitHub repository and download the latest <a class="reference external" href="https://github.com/nanos-world/assets-development-kit/releases/latest">Assets Development Kit - ADK</a> and extract it anywhere. You will find a <code class="docutils literal notranslate"><span class="pre">NanosWorldADK.uproject</span></code> file in there, just open it with Unreal Engine 4.25 and you are done!</p>
+<p>When you open the project, you can start this Tutorial which will give you a brief information about the assets in there.</p>
+<img alt="https://i.imgur.com/ncKKP2q.png" src="https://i.imgur.com/ncKKP2q.png" />
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>DO NOT <strong>MODIFY</strong>, <strong>DELETE</strong>, <strong>CREATE</strong> or <strong>COPY</strong> any file inside <code class="docutils literal notranslate"><span class="pre">NanosWorld/</span></code> folder, otherwise the ADK will not work properly. Make sure you DO NOT modify them unintentionally! If asked to save any modified file in there, cancel it! All references must use <code class="docutils literal notranslate"><span class="pre">NanosWorld/</span></code> where they are.</p>
+</div>
+</div>
+<div class="section" id="tools-avaliable-inside-the-adk-project">
+<h2>Tools avaliable inside the ADK project:<a class="headerlink" href="#tools-avaliable-inside-the-adk-project" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="placeholder-blueprints-nanosworld-blueprints-placeholders">
+<h3>Placeholder Blueprints <code class="docutils literal notranslate"><span class="pre">NanosWorld/Blueprints/Placeholders/</span></code><a class="headerlink" href="#placeholder-blueprints-nanosworld-blueprints-placeholders" title="Permalink to this headline">¶</a></h3>
+<img alt="https://i.imgur.com/t6MDCxW.png" src="https://i.imgur.com/t6MDCxW.png" />
+<p>You can use these Blueprints to set Spawn Positions of Vehicles, Weapons and Props. This works only to help you generating a Lua code with spawn positions after all. These Blueprints aren’t cooked with the map. Use the <strong>Lua Code Generator</strong> to generate a Lua code with all spawn locations.</p>
+</div>
+<div class="section" id="lua-code-generator-nanosworld-blueprints-utility-wbp-luacodegenerator">
+<h3>Lua Code Generator <code class="docutils literal notranslate"><span class="pre">NanosWorld/Blueprints/Utility/WBP_LuaCodeGenerator</span></code><a class="headerlink" href="#lua-code-generator-nanosworld-blueprints-utility-wbp-luacodegenerator" title="Permalink to this headline">¶</a></h3>
+<img alt="https://i.imgur.com/1lIbAMe.png" src="https://i.imgur.com/1lIbAMe.png" />
+<p>This is an <strong>Editor Utility Widget</strong> which scans your map and generate a list of spawn code with exact Location and Rotation for every Placeholder Blueprint you had spawned.</p>
+<p>To run it, right click on it and press <strong>Run Editor Utility Widget</strong>:</p>
+<img alt="https://i.imgur.com/4e4zCou.png" src="https://i.imgur.com/4e4zCou.png" />
+</div>
+<div class="section" id="assets-toml-generator-nanosworld-blueprints-utility-wbp-assetstomlgenerator">
+<h3>Assets.toml Generator <code class="docutils literal notranslate"><span class="pre">NanosWorld/Blueprints/Utility/WBP_AssetsTomlGenerator</span></code><a class="headerlink" href="#assets-toml-generator-nanosworld-blueprints-utility-wbp-assetstomlgenerator" title="Permalink to this headline">¶</a></h3>
+<img alt="https://i.imgur.com/qQBGocw.png" src="https://i.imgur.com/qQBGocw.png" />
+<p>This is an <strong>Editor Utility Widget</strong> which scans a folder (determined by the TextBox) and generates an <cite>Assets.toml</cite> with all Assets in the folder (which can be used in nanos world).</p>
+</div>
+<div class="section" id="sun-sky-actor-nanosworld-blueprints-world-bp-sunsky">
+<h3>Sun &amp; Sky Actor <code class="docutils literal notranslate"><span class="pre">NanosWorld/Blueprints/World/BP_SunSky</span></code><a class="headerlink" href="#sun-sky-actor-nanosworld-blueprints-world-bp-sunsky" title="Permalink to this headline">¶</a></h3>
+<p>A pre-configured Sun &amp; Sky Actor which can be used and easily replaced by nanos world Official Sun with <code class="docutils literal notranslate"><span class="pre">World:SpawnDefaultSun()</span></code>. This is useful to get an approximate result of how the light will look like in-game if you decide to Spawn the Default Sun.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you override it with <code class="docutils literal notranslate"><span class="pre">World:SpawnDefaultSun()</span></code>, no configuration you did on it will persist, i.e. all Light Intensity, Color, Post Process and other configuration will be lost.</p>
+</div>
+</div>
+<div class="section" id="physical-materials-nanosworld-materiallibrary-physicalmaterials">
+<h3>Physical Materials <code class="docutils literal notranslate"><span class="pre">NanosWorld/MaterialLibrary/PhysicalMaterials/</span></code><a class="headerlink" href="#physical-materials-nanosworld-materiallibrary-physicalmaterials" title="Permalink to this headline">¶</a></h3>
+<img alt="https://i.imgur.com/SkBteAq.png" src="https://i.imgur.com/SkBteAq.png" />
+<p>If you are creating a Material, you can use these Physical Materials do integrate better with nanos world. Using these Physical Materials will allow nanos world recognize which type of surface your Prop/Object is, giving it the proper auto-generated Hit Sound. DO NOT modify or rename them, only use them in your Materials.</p>
+</div>
+<div class="section" id="mannequin-skeleton-nanosworld-characters-common-skel-mannequin">
+<h3>Mannequin Skeleton <code class="docutils literal notranslate"><span class="pre">NanosWorld/Characters/Common/SKEL_Mannequin</span></code><a class="headerlink" href="#mannequin-skeleton-nanosworld-characters-common-skel-mannequin" title="Permalink to this headline">¶</a></h3>
+<p>To be able to create Skeletal (Character) Meshes which work with our <a class="reference internal" href="../scripting/classes/Character.html#character"><span class="std std-ref">Character</span></a> entity, you must set your Skeletal Mesh to use our Mannequin Skeleton. This Skeleton is the same as Unreal Engine 4 default Mannequin, so any Skeletal Mesh which uses UE4’s Mannequin Skeleton will work for us!</p>
+<p>To change a Skeletal Mesh’s Skeleton: right click on it &gt;&gt; Skeleton &gt;&gt; Assign Skeleton and change it to our <code class="docutils literal notranslate"><span class="pre">SKEL_Mannequin</span></code>.</p>
+<img alt="https://i.imgur.com/uGnNCTM.png" src="https://i.imgur.com/uGnNCTM.png" />
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Characters.html" class="btn btn-neutral float-right" title="Characters" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Modding" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, nanos GbR
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

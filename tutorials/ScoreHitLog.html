@@ -1,0 +1,595 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Score, Kill &amp; Hit Log &mdash; nanos.world Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/style.css?v2" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css?v1" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script type="text/javascript" src="../_static/sphinx_tabs/tabs.js"></script>
+        <script type="text/javascript" src="../_static/js/script.js?v1"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Traces / Raycasting" href="Trace.html" />
+    <link rel="prev" title="Prop Rain" href="PropRain.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../About.html">About us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ContributingToDocs.html">Contributing to the Docs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/AssetsQuickStart.html">Assets Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/ScriptingQuickStart.html">Scripting Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/ServerManual.html">Server Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_started/WebUIQuickStart.html">WebUI Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutorials &amp; Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="BasicHUDCanvas.html">Basic HUD (Canvas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BasicHUDHTML.html">Basic HUD (HTML)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ChatColors.html">Chat Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MonsterTruck.html">Monster Truck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NameTags.html">Name Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PlayAsProp.html">Play as Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PropShooter.html">Prop Shooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PropRain.html">Prop Rain</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Score, Kill &amp; Hit Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Trace.html">Traces / Raycasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WeaponFlashlight.html">Weapon Flashlight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WeaponScope.html">Weapon Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="XRay.html">X-Ray / Highlight</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Scripting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/classes/index.html">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Character.html">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Grenade.html">Grenade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Item.html">Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Light.html">Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Particle.html">Particle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Player.html">Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Prop.html">Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Sound.html">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/TextRender.html">Text Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Vehicle.html">Vehicle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Weapon.html">Weapon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/WebUI.html">WebUI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/static_classes/index.html">Static Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Assets.html">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Client.html">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/NanosWorld.html">NanosWorld</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Package.html">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Render.html">Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Server.html">Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Timer.html">Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/World.html">World</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/utility/index.html">Utility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/JSON.html">JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Rotator.html">Rotator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Vector2D.html">Vector2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/NanosMathLibrary.html">NanosMathLibrary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/Glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/Modules.html">Modules</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assets &amp; Modding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modding/index.html">Modding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modding/AssetsDevelopmentKit.html">Assets Development Kit - ADK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modding/Characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modding/MapsAndLevels.html">Maps &amp; Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modding/StaticMeshes.html">Static Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/NanosWorldDefaultPack.html">Nanos World Default Assets Pack</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">nanos.world Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Tutorials &amp; Examples</a> &raquo;</li>
+        
+      <li>Score, Kill &amp; Hit Log</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/nanos-world/docs/blob/master/tutorials/ScoreHitLog.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="score-kill-hit-log">
+<span id="scorehitlog"></span><h1>Score, Kill &amp; Hit Log<a class="headerlink" href="#score-kill-hit-log" title="Permalink to this headline">¶</a></h1>
+<p>The following script mimics Battlefield V Score, Kill &amp; Hit Log on the screen.</p>
+<video controls src="https://i.imgur.com/nvjtFTN.mp4" width="100%"></video><br><br><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following code runs on Client.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this Sample we will be using <a class="reference external" href="https://jquery.com/">JQuery</a>, please download <a class="reference external" href="https://code.jquery.com/jquery-3.5.1.min.js">the latest version</a> and place it inside <code class="docutils literal notranslate"><span class="pre">UI/</span></code> folder.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Scull images can be downloaded <a class="reference external" href="https://imgur.com/a/jmW3Ss3">here</a> and placed inside <cite>UI/images/</cite> folder.</p>
+</div>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-SW5kZXgubHVh docutils container">
+<div class="docutils container">
+<p>Index.lua</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-VUkvaW5kZXguaHRtbA== docutils container">
+<div class="docutils container">
+<p>UI/index.html</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-VUkvaW5kZXguanM= docutils container">
+<div class="docutils container">
+<p>UI/index.js</p>
+</div>
+</div>
+<div class="item sphinx-data-tab-VUkvc3R5bGUuY3Nz docutils container">
+<div class="docutils container">
+<p>UI/style.css</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-SW5kZXgubHVh active docutils container">
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Stores the UI Instance</span>
+<span class="n">KillHUDUI</span> <span class="o">=</span> <span class="kc">nil</span>
+
+<span class="c1">-- Creates a WebUI for the Inventory when the package loads</span>
+<span class="n">Package</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;Load&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
+    <span class="n">KillHUDUI</span> <span class="o">=</span> <span class="n">WebUI</span><span class="p">(</span><span class="s2">&quot;KillHUD&quot;</span><span class="p">,</span> <span class="s2">&quot;file:///UI/index.html&quot;</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+
+<span class="c1">-- Destroys the WebUI when the package unloads</span>
+<span class="n">Package</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;Unload&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
+    <span class="n">KillHUDUI</span><span class="p">:</span><span class="n">Destroy</span><span class="p">()</span>
+<span class="kr">end</span><span class="p">)</span>
+
+<span class="c1">-- When a character takes damage, checks if I was the causer and displays it on the screen</span>
+<span class="n">Character</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;TakeDamage&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">charact</span><span class="p">,</span> <span class="n">damage</span><span class="p">,</span> <span class="n">bone</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">from</span><span class="p">,</span> <span class="n">instigator</span><span class="p">)</span>
+    <span class="c1">-- If I was not the causer, just ignore it</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="n">instigator</span> <span class="o">~=</span> <span class="n">NanosWorld</span><span class="p">:</span><span class="n">GetLocalPlayer</span><span class="p">())</span> <span class="kr">then</span> <span class="kr">return</span> <span class="kr">end</span>
+
+    <span class="c1">-- If he&#39;s dead, just ignore it</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="n">charact</span><span class="p">:</span><span class="n">GetHealth</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="kr">then</span> <span class="kr">return</span> <span class="kr">end</span>
+
+    <span class="c1">-- Stores who was the last damager (me)</span>
+    <span class="n">charact</span><span class="p">:</span><span class="n">SetValue</span><span class="p">(</span><span class="s2">&quot;LastDamager&quot;</span><span class="p">,</span> <span class="n">instigator</span><span class="p">)</span>
+
+    <span class="c1">-- Stores which bone was the last damaged (to check if he dies from headshop)</span>
+    <span class="n">charact</span><span class="p">:</span><span class="n">SetValue</span><span class="p">(</span><span class="s2">&quot;LastDamagerBone&quot;</span><span class="p">,</span> <span class="n">bone</span><span class="p">)</span>
+
+    <span class="n">KillHUDUI</span><span class="p">:</span><span class="n">CallEvent</span><span class="p">(</span><span class="s2">&quot;AddScore&quot;</span><span class="p">,</span> <span class="p">{</span><span class="n">damage</span><span class="p">,</span> <span class="s2">&quot;enemy_hit&quot;</span><span class="p">,</span> <span class="s2">&quot;ENEMY HIT&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">})</span>
+<span class="kr">end</span><span class="p">)</span>
+
+<span class="c1">-- When a character dies, check if I was the last one to do damage on him and displays on the screen as a kill</span>
+<span class="n">Character</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;Death&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">charact</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="n">charact</span><span class="p">:</span><span class="n">GetValue</span><span class="p">(</span><span class="s2">&quot;LastDamager&quot;</span><span class="p">)</span> <span class="o">~=</span> <span class="n">NanosWorld</span><span class="p">:</span><span class="n">GetLocalPlayer</span><span class="p">())</span> <span class="kr">then</span> <span class="kr">return</span> <span class="kr">end</span>
+
+    <span class="kd">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">charact</span><span class="p">:</span><span class="n">GetPlayer</span><span class="p">()</span>
+
+    <span class="kd">local</span> <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;BOT&quot;</span>
+
+    <span class="c1">-- Attempts to get the player&#39;s name (if possessed by one)</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="n">player</span><span class="p">)</span> <span class="kr">then</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">player</span><span class="p">:</span><span class="n">GetName</span><span class="p">()</span>
+    <span class="kr">end</span>
+
+    <span class="c1">-- Gets the lat hit bone and check if it was a Headshot</span>
+    <span class="kd">local</span> <span class="n">last_bone</span> <span class="o">=</span> <span class="n">charact</span><span class="p">:</span><span class="n">GetValue</span><span class="p">(</span><span class="s2">&quot;LastDamagerBone&quot;</span><span class="p">)</span>
+    <span class="kd">local</span> <span class="n">is_headshot</span> <span class="o">=</span> <span class="n">last_bone</span> <span class="o">==</span> <span class="s2">&quot;head&quot;</span> <span class="ow">or</span> <span class="n">last_bone</span> <span class="o">==</span> <span class="s2">&quot;neck_01&quot;</span>
+
+    <span class="n">KillHUDUI</span><span class="p">:</span><span class="n">CallEvent</span><span class="p">(</span><span class="s2">&quot;AddKill&quot;</span><span class="p">,</span> <span class="p">{</span><span class="n">name</span><span class="p">,</span> <span class="n">is_headshot</span><span class="p">})</span>
+<span class="kr">end</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-VUkvaW5kZXguaHRtbA== docutils container">
+<div class="highlight-HTML notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;jquery-3.5.1.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;index.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#39;http://fonts.googleapis.com/css?family=Roboto&#39;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#39;stylesheet&#39;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#39;text/css&#39;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;kill_hud&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;death_counts&quot;</span><span class="p">&gt;</span>
+                <span class="c">&lt;!-- &lt;span class=&quot;death_count death_count_white&quot;&gt;&lt;/span&gt; --&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;death_name&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;total_score&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;score_feed&quot;</span><span class="p">&gt;</span>
+                <span class="c">&lt;!-- &lt;span class=&quot;score_feed_item enemy_hit&quot;&gt;ENEMY HIT +&lt;span class=&quot;score_value_item&quot;&gt;100&lt;/span&gt;&lt;/span&gt; --&gt;</span>
+                <span class="c">&lt;!-- &lt;span class=&quot;score_feed_item&quot;&gt;DEFENSIVE KILL +100&lt;/span&gt; --&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-VUkvaW5kZXguanM= docutils container">
+<div class="highlight-JavaScript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">timeout_hud</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">interval_score</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">total_score</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">total_score_current</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+
+<span class="nx">Events</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;AddScore&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">score</span><span class="p">,</span> <span class="nx">type_id</span><span class="p">,</span> <span class="nx">label</span><span class="p">,</span> <span class="nx">use_current</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">total_score</span> <span class="o">+=</span> <span class="nx">score</span><span class="p">;</span>
+
+    <span class="c1">// Displays all DOM elements</span>
+    <span class="nx">DisplayHUD</span><span class="p">();</span>
+
+    <span class="c1">// If should increment current score item instead of creating a new one</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">use_current</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">// Try to find if there is already a score item</span>
+        <span class="kd">let</span> <span class="nx">score_feed_item_value</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="sb">`.</span><span class="si">${</span><span class="nx">type_id</span><span class="si">}</span><span class="sb"> .score_value_item`</span><span class="p">);</span>
+
+        <span class="c1">// If a score item is found, then update it and return, otherwise it will keep on and will create a new one</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">score_feed_item_value</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="nx">score_feed_item_value</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">score_feed_item_value</span><span class="p">.</span><span class="nx">html</span><span class="p">())</span> <span class="o">+</span> <span class="nx">score</span><span class="p">);</span>
+            <span class="k">return</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Create a new score item and prepend it on the list</span>
+    <span class="kd">let</span> <span class="nx">score_feed_item</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="sb">`&lt;span class=&#39;score_feed_item </span><span class="si">${</span><span class="nx">type_id</span><span class="si">}</span><span class="sb">&#39;&gt;</span><span class="si">${</span><span class="nx">label</span><span class="si">}</span><span class="sb"> +&lt;span class=&#39;score_value_item&#39;&gt;</span><span class="si">${</span><span class="nx">score</span><span class="si">}</span><span class="sb">&lt;/span&gt;&lt;/span&gt;`</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#score_feed&quot;</span><span class="p">).</span><span class="nx">prepend</span><span class="p">(</span><span class="nx">score_feed_item</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="nx">Events</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;AddKill&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">is_headshot</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Adds 20 score for killing</span>
+    <span class="nx">total_score</span> <span class="o">+=</span> <span class="mf">20</span><span class="p">;</span>
+
+    <span class="c1">// Displays the killed name</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#death_name&quot;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb"> +20`</span><span class="p">);</span>
+
+    <span class="c1">// If it was headshot, displays the red skull, otherwise displays the white</span>
+    <span class="kd">let</span> <span class="nx">death_count_white</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="sb">`&lt;span class=&#39;death_count </span><span class="si">${</span><span class="nx">is_headshot</span> <span class="o">?</span> <span class="s2">&quot;death_count_red&quot;</span> <span class="o">:</span> <span class="s2">&quot;death_count_white&quot;</span><span class="si">}</span><span class="sb">&#39;&gt;`</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#death_counts&quot;</span><span class="p">).</span><span class="nx">prepend</span><span class="p">(</span><span class="nx">death_count_white</span><span class="p">);</span>
+
+    <span class="c1">// Displays all DOM elements</span>
+    <span class="nx">DisplayHUD</span><span class="p">();</span>
+<span class="p">});</span>
+
+<span class="c1">// Resets all animations and displays the HUD, also resets the timers and creates a new one to hide it in 4 seconds</span>
+<span class="kd">function</span> <span class="nx">DisplayHUD</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#death_counts&quot;</span><span class="p">).</span><span class="nx">stop</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#death_name&quot;</span><span class="p">).</span><span class="nx">stop</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#score_feed&quot;</span><span class="p">).</span><span class="nx">stop</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#total_score&quot;</span><span class="p">).</span><span class="nx">stop</span><span class="p">(</span><span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">timeout_hud</span><span class="p">)</span>
+        <span class="nx">clearTimeout</span><span class="p">(</span><span class="nx">timeout_hud</span><span class="p">);</span>
+
+    <span class="nx">timeout_hud</span> <span class="o">=</span> <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">ResetHUD</span><span class="p">,</span> <span class="mf">4000</span><span class="p">);</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">interval_score</span><span class="p">)</span>
+        <span class="nx">clearInterval</span><span class="p">(</span><span class="nx">interval_score</span><span class="p">);</span>
+
+    <span class="nx">interval_score</span> <span class="o">=</span> <span class="nx">setInterval</span><span class="p">(</span><span class="nx">UpdateHUD</span><span class="p">,</span> <span class="mf">50</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Resets the HUD, i.e. hides everything with animations and resets all data</span>
+<span class="kd">function</span> <span class="nx">ResetHUD</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#death_counts&quot;</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="mf">500</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#death_counts&quot;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+    <span class="p">});</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#death_name&quot;</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="mf">500</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#death_name&quot;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#score_feed&quot;</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="mf">500</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#score_feed&quot;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span> <span class="p">});</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#total_score&quot;</span><span class="p">).</span><span class="nx">fadeOut</span><span class="p">(</span><span class="mf">500</span><span class="p">);</span>
+    <span class="p">});</span>
+
+    <span class="nx">clearInterval</span><span class="p">(</span><span class="nx">interval_score</span><span class="p">);</span>
+    <span class="nx">interval_score</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+
+    <span class="nx">timeout_hud</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="nx">total_score</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+    <span class="nx">total_score_current</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Updates the HUD, i.e. updates the current displayed score in the screen</span>
+<span class="kd">function</span> <span class="nx">UpdateHUD</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">interp_pace</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">((</span><span class="nx">total_score</span> <span class="o">-</span> <span class="nx">total_score_current</span><span class="p">)</span> <span class="o">/</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">1</span><span class="p">);</span>
+
+    <span class="nx">total_score_current</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">(</span><span class="nx">total_score</span><span class="p">,</span> <span class="nx">total_score_current</span> <span class="o">+</span> <span class="nx">interp_pace</span><span class="p">));</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#total_score&quot;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">total_score_current</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-VUkvc3R5bGUuY3Nz docutils container">
+<div class="highlight-CSS notranslate"><div class="highlight"><pre><span></span><span class="nt">body</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="n">Roboto</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+    <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">background-size</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">kill_hud</span> <span class="p">{</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">300</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">fixed</span><span class="p">;</span>
+    <span class="k">left</span><span class="p">:</span> <span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">margin-left</span><span class="p">:</span> <span class="mi">-150</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">bottom</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+    <span class="k">text-shadow</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="mi">1</span><span class="kt">px</span> <span class="mi">1</span><span class="kt">px</span> <span class="mh">#000000</span><span class="mi">40</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">death_name</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">margin-top</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">total_score</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">margin-top</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">score_feed</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">max-height</span><span class="p">:</span> <span class="mi">63</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
+    <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+    <span class="k">margin-top</span><span class="p">:</span> <span class="mi">70</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">score_feed_item</span> <span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+    <span class="k">margin</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">death_counts</span> <span class="p">{</span>
+    <span class="k">height</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">death_count</span> <span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+    <span class="k">width</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">height</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">background-size</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span> <span class="kc">auto</span><span class="p">;</span>
+    <span class="k">background-repeat</span><span class="p">:</span> <span class="kc">no-repeat</span><span class="p">;</span>
+    <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="kt">px</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">death_count_white</span> <span class="p">{</span>
+    <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&quot;images/skull_white.png&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">death_count_red</span> <span class="p">{</span>
+    <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&quot;images/skull_red.png&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Trace.html" class="btn btn-neutral float-right" title="Traces / Raycasting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="PropRain.html" class="btn btn-neutral float-left" title="Prop Rain" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, nanos GbR
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

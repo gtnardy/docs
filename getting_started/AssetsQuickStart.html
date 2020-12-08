@@ -1,0 +1,459 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Assets Quick Start &mdash; nanos.world Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/style.css?v2" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css?v1" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/script.js?v1"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Scripting Quick Start" href="ScriptingQuickStart.html" />
+    <link rel="prev" title="Getting Started" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../About.html">About us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ContributingToDocs.html">Contributing to the Docs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Getting Started</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Assets Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ScriptingQuickStart.html">Scripting Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ServerManual.html">Server Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WebUIQuickStart.html">WebUI Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials &amp; Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/BasicHUDCanvas.html">Basic HUD (Canvas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/BasicHUDHTML.html">Basic HUD (HTML)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/ChatColors.html">Chat Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/MonsterTruck.html">Monster Truck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/NameTags.html">Name Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/PlayAsProp.html">Play as Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/PropShooter.html">Prop Shooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/PropRain.html">Prop Rain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/ScoreHitLog.html">Score, Kill &amp; Hit Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/Trace.html">Traces / Raycasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/WeaponFlashlight.html">Weapon Flashlight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/WeaponScope.html">Weapon Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/XRay.html">X-Ray / Highlight</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Scripting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/classes/index.html">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Character.html">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Grenade.html">Grenade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Item.html">Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Light.html">Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Particle.html">Particle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Player.html">Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Prop.html">Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Sound.html">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/TextRender.html">Text Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Vehicle.html">Vehicle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Weapon.html">Weapon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/WebUI.html">WebUI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/static_classes/index.html">Static Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Assets.html">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Client.html">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/NanosWorld.html">NanosWorld</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Package.html">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Render.html">Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Server.html">Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Timer.html">Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/World.html">World</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/utility/index.html">Utility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/JSON.html">JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Rotator.html">Rotator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Vector2D.html">Vector2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/NanosMathLibrary.html">NanosMathLibrary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/Glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/Modules.html">Modules</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assets &amp; Modding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modding/index.html">Modding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modding/AssetsDevelopmentKit.html">Assets Development Kit - ADK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modding/Characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modding/MapsAndLevels.html">Maps &amp; Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modding/StaticMeshes.html">Static Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/NanosWorldDefaultPack.html">Nanos World Default Assets Pack</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">nanos.world Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Getting Started</a> &raquo;</li>
+        
+      <li>Assets Quick Start</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/nanos-world/docs/blob/master/getting_started/AssetsQuickStart.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="assets-quick-start">
+<span id="assetsquickstart"></span><h1>Assets Quick Start<a class="headerlink" href="#assets-quick-start" title="Permalink to this headline">¶</a></h1>
+<p>nanos world provides fully capabilities of modifying, including and customizing the game. In this section we will explain how to include custom Assets in your server.</p>
+<div class="section" id="structure">
+<h2>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
+<p>Assets can be included in a folder called <code class="docutils literal notranslate"><span class="pre">Assets/</span></code> in the root server folder. All files in there will be sent to the clients and will be able to be referenced in your scripting code.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">NanosWorldServer</span><span class="p">.</span><span class="nx">exe</span>
+<span class="nb">Packages</span><span class="o">/</span>
+<span class="nx">Assets</span><span class="o">/</span>
+<span class="o">|</span>   <span class="nx">My_Asset_Pack_01</span><span class="o">/</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="nx">My_Asset_01</span><span class="p">.</span><span class="nx">uasset</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="nx">My_Asset_02</span><span class="p">.</span><span class="nx">uasset</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="nx">My_Big_Map</span><span class="p">.</span><span class="nx">umap</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="p">...</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="nx">Assets</span><span class="p">.</span><span class="nx">toml</span>
+<span class="o">|</span>   <span class="nx">Awesome_Weapons</span><span class="o">/</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="nx">Big_Fucking_Gun</span><span class="p">.</span><span class="nx">uasset</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="nx">AwesomeWeaponBundle</span><span class="p">.</span><span class="nx">pak</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="p">...</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="nx">Assets</span><span class="p">.</span><span class="nx">toml</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="creating-your-own-assets">
+<h2>Creating your own Assets<a class="headerlink" href="#creating-your-own-assets" title="Permalink to this headline">¶</a></h2>
+<p>If you are already familiar with <a class="reference external" href="https://www.unrealengine.com">Unreal Engine 4</a>, creating and using custom assets in nanos world is very straightforward. For that, it’s only necessary to follow some steps.</p>
+<p>All custom Assets must be cooked and packed through Unreal Engine 4. It is not (yet?) possible to import custom assets (meshes, images, sounds) directly to the game, so you will need Unreal Engine 4 installed just to import your assets and export them in the proper format. This guide will teach you how to download the most light version of Unreal Engine 4 and the steps needed to export and use your assets properly.</p>
+<div class="section" id="installing-unreal-engine-4">
+<h3>Installing Unreal Engine 4<a class="headerlink" href="#installing-unreal-engine-4" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Download and Install <a class="reference external" href="https://www.unrealengine.com/en-US/download/ue_non_games">Epic Games Launcher</a> (follow the steps for agreeing to Unreal Engine terms).</p></li>
+<li><p>Install Unreal Engine from inside Epic Games Launcher -&gt; Unreal Engine tab -&gt; Library -&gt; <code class="docutils literal notranslate"><span class="pre">+</span></code> Engine Version (We are always using the latest version ;)). Before starting the download, select Options in the dropdown menu and deselect all items, so your installation will be lean with no unecessary stuff.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Please refer to <a class="reference external" href="https://docs.unrealengine.com/en-US/GettingStarted">Unreal Official Documentation</a> for more information and tutorials. For the sake of this tutorial, we are not covering further details on Unreal’s peculiarities.</p>
+</div>
+</div>
+<div class="section" id="using-the-assets-development-kit-adk">
+<h3>Using the Assets Development Kit - ADK<a class="headerlink" href="#using-the-assets-development-kit-adk" title="Permalink to this headline">¶</a></h3>
+<p>nanos world provides an <a class="reference internal" href="../modding/AssetsDevelopmentKit.html#assetsdevelopmentkit"><span class="std std-ref">Assets Development Kit - ADK</span></a> which helps integrating assets and making the process faster. This is an Unreal Project with useful assets and placeholders which can be used to help your assets and mapping creation. You can and must download and use it to continue this tutorial.</p>
+</div>
+<div class="section" id="exporting-assets-from-unreal-engine">
+<h3>Exporting Assets from Unreal Engine<a class="headerlink" href="#exporting-assets-from-unreal-engine" title="Permalink to this headline">¶</a></h3>
+<p>For this tutorial, we are going to use a simple Cube (Static Mesh) and a Material (applied to the cube) for our Assets. We’ve also created and placed them in a folder called MyPack which will help us afterwards.</p>
+<img alt="https://i.imgur.com/H5x15qE.png" src="https://i.imgur.com/H5x15qE.png" />
+<img alt="https://i.imgur.com/jcwWd0L.png" src="https://i.imgur.com/jcwWd0L.png" />
+<p>For exporting them in a recognizable way by nanos world, you need to “Package the Project” (i.e. cooking and packaging it), for that just select the following option and select any folder in your computer and wait it finishes, it may take some minutes:</p>
+<img alt="https://i.imgur.com/h0fMzGa.png" src="https://i.imgur.com/h0fMzGa.png" />
+<img alt="https://i.imgur.com/ImGjShf.png" src="https://i.imgur.com/ImGjShf.png" />
+<p>After finishing, you will get a folder like that:</p>
+<img alt="https://i.imgur.com/FnUex4P.png" src="https://i.imgur.com/FnUex4P.png" />
+</div>
+</div>
+<div class="section" id="importing-and-using-assets-in-your-server">
+<h2>Importing and Using Assets in your Server<a class="headerlink" href="#importing-and-using-assets-in-your-server" title="Permalink to this headline">¶</a></h2>
+<p>After packaging your project, we will manually copy the exported folder from it, the one we are looking for probably will be located at <code class="docutils literal notranslate"><span class="pre">assets-development-kit/Content/</span></code>. As we created a folder called <code class="docutils literal notranslate"><span class="pre">MyPack</span></code>, our exported assets will be at <code class="docutils literal notranslate"><span class="pre">assets-development-kit/Content/MyPack/</span></code>:</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>It is important to keep your main Asset Folder (in this case <code class="docutils literal notranslate"><span class="pre">MyPack</span></code>) with the same name when copying to, otherwise internal references will not work.</p>
+</div>
+<img alt="https://i.imgur.com/BIzXctE.png" src="https://i.imgur.com/BIzXctE.png" />
+<p>And thats it! You must now just copy <code class="docutils literal notranslate"><span class="pre">MyPack/</span></code> folder inside your Server’s <code class="docutils literal notranslate"><span class="pre">Assets/</span></code> folder and create a configuration file called <code class="docutils literal notranslate"><span class="pre">Assets.toml</span></code> in <code class="docutils literal notranslate"><span class="pre">MyPack/</span></code> folder with the pattern described in <a class="reference external" href="#assets-configuration-file">#assets-configuration-file</a>. For each Asset you have in your Pack, you must add an entry in the configuration file.</p>
+<p>For our Cube mesh, we just need to add an entry with the Path of the cube relative to our Assets folder in the pattern <code class="docutils literal notranslate"><span class="pre">[ASSET_NAME]</span> <span class="pre">=</span> <span class="pre">&quot;[ASSET_PATH]&quot;</span></code>:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="c1"># Static Meshes</span>
+<span class="k">[assets.static_meshes]</span>
+<span class="n">SM_Cube</span> <span class="o">=</span> <span class="s">&quot;SM_Cube&quot;</span>
+</pre></div>
+</div>
+<p>Then it is possible to spawn our Cube like <code class="docutils literal notranslate"><span class="pre">Prop(Vector(0,</span> <span class="pre">0,</span> <span class="pre">0),</span> <span class="pre">Rotator(0,</span> <span class="pre">0,</span> <span class="pre">0),</span> <span class="pre">&quot;MyPack::SM_Cube&quot;)</span></code>:</p>
+<img alt="https://i.imgur.com/H0B7WWp.png" src="https://i.imgur.com/H0B7WWp.png" />
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please do NOT rename or change any file or folder in your exported folder after you Packaged it, it will break all internal references used by your assets.</p>
+</div>
+<div class="section" id="id1">
+<h3>Assets Configuration File<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>nanos world Config files use <strong>TOML</strong> (Tom’s Obvious, Minimal Language), please refer to <a class="reference external" href="https://github.com/toml-lang/toml">https://github.com/toml-lang/toml</a> for more information and syntax.</p>
+</div>
+<p>The Assets Configuration file <code class="docutils literal notranslate"><span class="pre">Assets.toml</span></code> is generated automatically when an Asset Pack is loaded for the first time. This file will always be overriden with the proper pattern after it’s loaded.</p>
+<p>It is extremely important to setup your <code class="docutils literal notranslate"><span class="pre">Assets.toml</span></code> file, in there you will need to list every asset contained in your Pack, as well the type of them, besides that, this is where Scripters can look into to find the assets they want to use.</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="c1"># Asset Pack Configurations</span>
+<span class="k">[asset_pack]</span>
+    <span class="c1"># Asset Pack Name</span>
+    <span class="n">name</span> <span class="o">=</span>              <span class="s">&quot;My Pack&quot;</span>
+    <span class="c1"># Author</span>
+    <span class="n">author</span> <span class="o">=</span>            <span class="s">&quot;Incredible Asset Creator&quot;</span>
+    <span class="c1"># Version</span>
+    <span class="n">version</span> <span class="o">=</span>           <span class="s">&quot;1.1.0&quot;</span>
+
+<span class="c1"># Assets Files</span>
+<span class="k">[assets]</span>
+    <span class="c1"># Maps</span>
+    <span class="k">[assets.maps]</span>
+    <span class="n">AwesomeAndBigMap</span> <span class="o">=</span> <span class="s">&quot;Maps/BigMap_01&quot;</span>
+
+    <span class="c1"># Static Meshes</span>
+    <span class="k">[assets.static_meshes]</span>
+    <span class="c1"># SM_Flower_01 = &quot;MyFolder/SM_Awesome_Flower_01&quot;</span>
+    <span class="c1"># ...</span>
+
+    <span class="c1"># Skeletal Meshes</span>
+    <span class="k">[assets.skeletal_meshes]</span>
+    <span class="c1"># SK_Better_Man = &quot;Characters/SK_BetterMan_3&quot;</span>
+    <span class="c1"># ...</span>
+
+    <span class="k">[assets.sounds]</span>
+    <span class="c1"># A_RingSound = &quot;Audios/A_RingSound&quot;</span>
+    <span class="c1"># ...</span>
+
+    <span class="c1"># Animations</span>
+    <span class="k">[assets.animations]</span>
+    <span class="c1"># A_Character_Jump = &quot;Animations/A_Character_Jump&quot;</span>
+    <span class="c1"># ...</span>
+
+    <span class="c1"># Other Assets (for not yet categorized ones)</span>
+    <span class="k">[assets.others]</span>
+    <span class="c1"># A_Audio_Rifle_Fire = &quot;Audios/A_Audio_Rifle_Fire_03&quot;</span>
+    <span class="c1"># ...</span>
+</pre></div>
+</div>
+<p>As seen above, Assets can be set in a <code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">=</span> <span class="pre">&quot;value&quot;</span></code> pattern, the <strong>key</strong> being how Scripters reference it in their code, and the <strong>value</strong> being the path where the game will look for it. Note: all paths are relative to the Asset Pack folder. So for example, if <strong>Characters</strong> is a <strong>folder</strong> inside MyPack Asset Pack folder then the relative path would be: “Characters/Your_Asset_Name”.</p>
+</div>
+<div class="section" id="referencing-assets-in-code">
+<h3>Referencing Assets in Code<a class="headerlink" href="#referencing-assets-in-code" title="Permalink to this headline">¶</a></h3>
+<p>The correct way of referencing assets in code is using the pattern: <code class="docutils literal notranslate"><span class="pre">ASSET_PACK_NAME::ASSET_FILE_NAME</span></code>. So for example, if I want to reference to AwesomeAndBigMap as the above example, I would use: <code class="docutils literal notranslate"><span class="pre">MyPack::AwesomeAndBigMap</span></code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The key <code class="docutils literal notranslate"><span class="pre">ASSET_PACK_NAME</span></code> is the Asset Pack’s folder name.</p>
+</div>
+</div>
+</div>
+<div class="section" id="going-further">
+<h2>Going Further<a class="headerlink" href="#going-further" title="Permalink to this headline">¶</a></h2>
+<script>
+        DrawCard(
+                "../modding/index.html",
+                "https://uploads.jovemnerd.com.br/wp-content/uploads/2019/03/thomas-re2-1210x540.png",
+                "Modding Overview",
+                "Learn how modding in possible in nanos world."
+        );
+
+        DrawCard(
+                "../modding/NanosWorldDefaultPack.html",
+                "https://cdn.arstechnica.net/wp-content/uploads/2015/09/IBC-facebook-1200x630-398254359.png",
+                "Nanos World Assets Pack",
+                "Check it out all assets already included in the base game."
+        );
+</script></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ScriptingQuickStart.html" class="btn btn-neutral float-right" title="Scripting Quick Start" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, nanos GbR
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

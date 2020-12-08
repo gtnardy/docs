@@ -1,0 +1,499 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Scripting Quick Start &mdash; nanos.world Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/style.css?v2" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css?v1" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.js"></script>
+        <script type="text/javascript" src="../_static/sphinx_tabs/tabs.js"></script>
+        <script type="text/javascript" src="../_static/js/script.js?v1"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Server Manual" href="ServerManual.html" />
+    <link rel="prev" title="Assets Quick Start" href="AssetsQuickStart.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../About.html">About us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ContributingToDocs.html">Contributing to the Docs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Getting Started</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="AssetsQuickStart.html">Assets Quick Start</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Scripting Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ServerManual.html">Server Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WebUIQuickStart.html">WebUI Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials &amp; Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/BasicHUDCanvas.html">Basic HUD (Canvas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/BasicHUDHTML.html">Basic HUD (HTML)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/ChatColors.html">Chat Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/MonsterTruck.html">Monster Truck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/NameTags.html">Name Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/PlayAsProp.html">Play as Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/PropShooter.html">Prop Shooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/PropRain.html">Prop Rain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/ScoreHitLog.html">Score, Kill &amp; Hit Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/Trace.html">Traces / Raycasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/WeaponFlashlight.html">Weapon Flashlight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/WeaponScope.html">Weapon Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/XRay.html">X-Ray / Highlight</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Scripting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/classes/index.html">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Character.html">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Grenade.html">Grenade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Item.html">Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Light.html">Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Particle.html">Particle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Player.html">Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Prop.html">Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Sound.html">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/TextRender.html">Text Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Vehicle.html">Vehicle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/Weapon.html">Weapon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/classes/WebUI.html">WebUI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/static_classes/index.html">Static Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Assets.html">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Client.html">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/NanosWorld.html">NanosWorld</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Package.html">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Render.html">Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Server.html">Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/Timer.html">Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/static_classes/World.html">World</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/utility/index.html">Utility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/JSON.html">JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Rotator.html">Rotator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/Vector2D.html">Vector2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripting/utility/NanosMathLibrary.html">NanosMathLibrary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/Glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripting/Modules.html">Modules</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assets &amp; Modding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modding/index.html">Modding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modding/AssetsDevelopmentKit.html">Assets Development Kit - ADK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modding/Characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modding/MapsAndLevels.html">Maps &amp; Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modding/StaticMeshes.html">Static Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../modding/NanosWorldDefaultPack.html">Nanos World Default Assets Pack</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">nanos.world Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Getting Started</a> &raquo;</li>
+        
+      <li>Scripting Quick Start</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/nanos-world/docs/blob/master/getting_started/ScriptingQuickStart.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="scripting-quick-start">
+<span id="scriptingquickstart"></span><h1>Scripting Quick Start<a class="headerlink" href="#scripting-quick-start" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Adding functionalities and gamemode features into nanos world is simpler than it looks! In this Quick Start Guide, you will learn how to setup a Package in nanos world and program your first Lua scripting functionality.</p>
+</div>
+<div class="section" id="packages">
+<h2>Packages<a class="headerlink" href="#packages" title="Permalink to this headline">¶</a></h2>
+<p>Packages (or Modules) are pieces/components of your gamemode which are isolated from other packages you created. All Packages must go under <code class="docutils literal notranslate"><span class="pre">Packages/</span></code> folder, each Package is a folder under that. Each Package must contain the following folders: <code class="docutils literal notranslate"><span class="pre">Server</span></code>, <code class="docutils literal notranslate"><span class="pre">Client</span></code> and <code class="docutils literal notranslate"><span class="pre">Shared</span></code>. Client and Shared will be sent to the Clients when they connect. Server will run only on the Server and won’t be sent to Clients.</p>
+<p>Each Package must have an <code class="docutils literal notranslate"><span class="pre">Index.lua</span></code>, this is the only file which will be triggered when the Package is loaded, this way this file is responsible for including other files and starting up your functionalities.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Shared packages are always loaded before Client and Server package.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Maps can also have a <strong>Custom Script</strong> (server-only) attached to it. These are files named <code class="docutils literal notranslate"><span class="pre">[MAP_NAME].lua</span></code> in the same folder as the map in the <code class="docutils literal notranslate"><span class="pre">Assets/</span></code> folder. If no one of your Packages disallow it, this script file will be loaded as well. Usually these scripts should have map specific spawn props/weapons points and pertinent stuff. Please refer to <a class="reference internal" href="../modding/MapsAndLevels.html#mapsandlevels"><span class="std std-ref">Maps &amp; Levels</span></a> for more information.</p>
+</div>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">NanosWorldServer</span><span class="p">.</span><span class="nx">exe</span>
+<span class="nb">Packages</span><span class="o">/</span>
+<span class="o">|</span>   <span class="nx">My_Package_01</span><span class="o">/</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="nx">Server</span><span class="o">/</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="nx">Index</span><span class="p">.</span><span class="nx">lua</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="o">*</span><span class="p">.</span><span class="nx">lua</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="nx">Client</span><span class="o">/</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="o">*</span><span class="p">.</span><span class="nx">lua</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="nx">Shared</span><span class="o">/</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="o">*</span><span class="p">.</span><span class="nx">lua</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="nx">Package</span><span class="p">.</span><span class="nx">toml</span>
+<span class="o">|</span>   <span class="nx">My_Package_02</span><span class="o">/</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="nx">Package</span><span class="p">.</span><span class="nx">toml</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="p">...</span>
+<span class="nx">Assets</span><span class="o">/</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="creating-your-first-script">
+<h2>Creating your first Script<a class="headerlink" href="#creating-your-first-script" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please check out <a class="reference internal" href="ServerManual.html#servermanual"><span class="std std-ref">Server Manual</span></a> before proceeding to setup your server.</p>
+</div>
+<p>In this example we will show you how to spawn a few <a class="reference internal" href="../scripting/classes/Prop.html#prop"><span class="std std-ref">Prop</span></a>s, spawn a <a class="reference internal" href="../scripting/classes/Character.html#character"><span class="std std-ref">Character</span></a> for <a class="reference internal" href="../scripting/classes/Player.html#player"><span class="std std-ref">Player</span></a>s and interact with some <a class="reference internal" href="../scripting/static_classes/Events.html#events"><span class="std std-ref">Events</span></a>.</p>
+<p>First of all, create a new folder inside <code class="docutils literal notranslate"><span class="pre">Packages/</span></code> called <code class="docutils literal notranslate"><span class="pre">MyAwesomePackage</span></code> (or whatever name you want ;)), and inside that create a <code class="docutils literal notranslate"><span class="pre">Server</span></code> folder with a <code class="docutils literal notranslate"><span class="pre">Index.lua</span></code> file. All scripting files inside of Server folder will remain and run only on server side. You will be like that:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">NanosWorldServer</span><span class="p">.</span><span class="nx">exe</span>
+<span class="nb">Packages</span><span class="o">/</span>
+<span class="o">|</span>   <span class="nx">MyAwesomePackage</span><span class="o">/</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="nx">Server</span><span class="o">/</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="o">|</span>   <span class="nx">Index</span><span class="p">.</span><span class="nx">lua</span>
+<span class="o">|</span>   <span class="o">|</span>   <span class="nx">Package</span><span class="p">.</span><span class="nx">toml</span>
+<span class="nx">Assets</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>Open your <code class="docutils literal notranslate"><span class="pre">Index.lua</span></code> file in any editor you want (if you don’t have one, we’d recommend you try <a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a>).</p>
+<p>Let’s start spawning some Props in your server, for that, use this code:</p>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-THVh docutils container">
+<div class="docutils container">
+<p>Lua</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-THVh active docutils container">
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- We can print to Console a friendly message</span>
+<span class="n">Package</span><span class="p">:</span><span class="n">Log</span><span class="p">(</span><span class="s2">&quot;Loading some Props =D&quot;</span><span class="p">)</span>
+
+<span class="c1">-- Spawning Props...</span>
+<span class="n">prop_table</span> <span class="o">=</span> <span class="n">Prop</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="s2">&quot;NanosWorld::SM_WoodenTable&quot;</span><span class="p">)</span>
+<span class="n">prop_chair</span> <span class="o">=</span> <span class="n">Prop</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="s2">&quot;NanosWorld::SM_WoodenChair&quot;</span><span class="p">)</span>
+<span class="n">prop_tire</span> <span class="o">=</span> <span class="n">Prop</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">600</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">Rotator</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="s2">&quot;NanosWorld::SM_TireLarge&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>This will spawn 3 Props (a Table, a chair and a Tire) close to each other. After that, you can start the server and you will see the output:</p>
+<img alt="https://i.imgur.com/JGp6QhZ.png" src="https://i.imgur.com/JGp6QhZ.png" />
+<p>You can also join your server to see the results =D</p>
+<img alt="https://i.imgur.com/Att5lDV.png" src="https://i.imgur.com/Att5lDV.png" />
+<p>Very nice! But you may have noticed you are just a wandering soul flying around, let’s give you some flesh! For that, we will need to interact with some <a class="reference internal" href="../scripting/static_classes/Events.html#events"><span class="std std-ref">Events</span></a>.</p>
+<p>In nanos world we have a Class called <a class="reference internal" href="../scripting/classes/Player.html#player"><span class="std std-ref">Player</span></a>. Player’s are just a representation of a physical person behind the mouse and keyboard. Inside the game Player’s don’t have physical presence, because of that we must assign a <a class="reference internal" href="../scripting/classes/Character.html#character"><span class="std std-ref">Character</span></a> to them, so with that they can incarnate and personify something =D.</p>
+<p>When a <a class="reference internal" href="../scripting/classes/Player.html#player"><span class="std std-ref">Player</span></a> connects to your server, a new Player class is automatically spawned and you can get them with the following event:</p>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-THVh docutils container">
+<div class="docutils container">
+<p>Lua</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-THVh active docutils container">
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Called when Players join the server (i.e. spawn)</span>
+<span class="n">Player</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;Spawn&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">new_player</span><span class="p">)</span>
+
+<span class="kr">end</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>For spawning and assigning this new player to a new Character, we can just make that:</p>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-THVh docutils container">
+<div class="docutils container">
+<p>Lua</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-THVh active docutils container">
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Called when Players join the server (i.e. spawn)</span>
+<span class="n">Player</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;Spawn&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">new_player</span><span class="p">)</span>
+    <span class="c1">-- Spawns a Character at position X = 0, Y = 0, Z = 0 with default&#39;s constructor parameters</span>
+    <span class="kd">local</span> <span class="n">new_character</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+    <span class="c1">-- Possess the new Character</span>
+    <span class="n">new_player</span><span class="p">:</span><span class="n">Possess</span><span class="p">(</span><span class="n">new_character</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>And that it! Ah, just remember to destroy the Characters when players disconnect, otherwise there will be a lot of souless Characters remaining on the map:</p>
+<div class="sphinx-tabs docutils container">
+<div class="ui top attached tabular menu sphinx-menu docutils container">
+<div class="active item sphinx-data-tab-THVh docutils container">
+<div class="docutils container">
+<p>Lua</p>
+</div>
+</div>
+</div>
+<div class="ui bottom attached sphinx-tab tab segment code-tab sphinx-data-tab-THVh active docutils container">
+<div class="highlight-lua notranslate"><div class="highlight"><pre><span></span><span class="c1">-- Called when Players join the server (i.e. spawn)</span>
+<span class="n">Player</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;Spawn&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">new_player</span><span class="p">)</span>
+    <span class="c1">-- Spawns a Character at position X = 0, Y = 0, Z = 0 with default&#39;s constructor parameters</span>
+    <span class="kd">local</span> <span class="n">new_character</span> <span class="o">=</span> <span class="n">Character</span><span class="p">(</span><span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+    <span class="c1">-- Possess the new Character</span>
+    <span class="n">new_player</span><span class="p">:</span><span class="n">Possess</span><span class="p">(</span><span class="n">new_character</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+
+<span class="c1">-- Called when Player unpossess a Character (when Players disconnect, they will trigger UnPossess event)</span>
+<span class="n">Player</span><span class="p">:</span><span class="n">on</span><span class="p">(</span><span class="s2">&quot;UnPossess&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="n">character</span><span class="p">,</span> <span class="n">isPlayerDisconnecting</span><span class="p">)</span>
+    <span class="c1">-- If Player is disconnecting from the server, destroys it&#39;s Character</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="n">isPlayerDisconnecting</span><span class="p">)</span> <span class="kr">then</span>
+        <span class="n">character</span><span class="p">:</span><span class="n">Destroy</span><span class="p">()</span>
+    <span class="kr">end</span>
+<span class="kr">end</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<img alt="https://i.imgur.com/mz4sy2Q.png" src="https://i.imgur.com/mz4sy2Q.png" />
+<p>Congratulations! You have finished your fist basic Script and Learned:</p>
+<ul class="simple">
+<li><p>How to setup a simple Package and Script</p></li>
+<li><p>Basic interact with built-in <a class="reference internal" href="../scripting/static_classes/Events.html#events"><span class="std std-ref">Events</span></a></p></li>
+<li><p>Spawning <a class="reference internal" href="../scripting/classes/Prop.html#prop"><span class="std std-ref">Prop</span></a>s</p></li>
+<li><p>Spawning <a class="reference internal" href="../scripting/classes/Character.html#character"><span class="std std-ref">Character</span></a>s</p></li>
+</ul>
+</div>
+<div class="section" id="moving-further">
+<h2>Moving Further<a class="headerlink" href="#moving-further" title="Permalink to this headline">¶</a></h2>
+<script>
+        DrawCard(
+                "../scripting/classes/index.html",
+                "https://vectorsart.com/vectors-images/vectorsart_18001.jpg",
+                "Classes",
+                "Information of all spawnable objects/entities of nanos world."
+        );
+
+        DrawCard(
+                "../scripting/static_classes/index.html",
+                "https://vectorsart.com/vectors-images/vectorsart_18001.jpg",
+                "Static Classes",
+                "Information of all Global/Static Classes of nanos world."
+        );
+
+        DrawCard(
+                "../scripting/utility/index.html",
+                "https://cdn.pixabay.com/photo/2016/09/10/17/18/book-1659717__340.jpg",
+                "Utility Classes",
+                "Utility classes (Vector, Rotator, Color, etc) information."
+        );
+
+        DrawCard(
+                "../scripting/Glossary.html",
+                "https://cdn.pixabay.com/photo/2016/09/10/17/18/book-1659717__340.jpg",
+                "Glossary",
+                "Common used terms and programming types."
+        );
+</script></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ServerManual.html" class="btn btn-neutral float-right" title="Server Manual" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="AssetsQuickStart.html" class="btn btn-neutral float-left" title="Assets Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, nanos GbR
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

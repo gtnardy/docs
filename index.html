@@ -1,0 +1,364 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>nanos world Official Documentation &mdash; nanos.world Documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sphinx_tabs/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/style.css?v2" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css?v1" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/js/script.js?v1"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="About us" href="About.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="About.html">About us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ContributingToDocs.html">Contributing to the Docs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/index.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started/AssetsQuickStart.html">Assets Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started/ScriptingQuickStart.html">Scripting Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started/ServerManual.html">Server Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started/WebUIQuickStart.html">WebUI Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials &amp; Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/BasicHUDCanvas.html">Basic HUD (Canvas)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/BasicHUDHTML.html">Basic HUD (HTML)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/ChatColors.html">Chat Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/MonsterTruck.html">Monster Truck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/NameTags.html">Name Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/PlayAsProp.html">Play as Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/PropShooter.html">Prop Shooter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/PropRain.html">Prop Rain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/ScoreHitLog.html">Score, Kill &amp; Hit Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/Trace.html">Traces / Raycasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/WeaponFlashlight.html">Weapon Flashlight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/WeaponScope.html">Weapon Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorials/XRay.html">X-Ray / Highlight</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Scripting</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="scripting/classes/index.html">Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scripting/classes/Character.html">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/classes/File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/classes/Grenade.html">Grenade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/classes/Item.html">Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/classes/Light.html">Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/classes/Particle.html">Particle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/classes/Player.html">Player</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/classes/Prop.html">Prop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/classes/Sound.html">Sound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/classes/TextRender.html">Text Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/classes/Trigger.html">Trigger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/classes/Vehicle.html">Vehicle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/classes/Weapon.html">Weapon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/classes/WebUI.html">WebUI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scripting/static_classes/index.html">Static Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scripting/static_classes/Assets.html">Assets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/static_classes/Client.html">Client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/static_classes/Events.html">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/static_classes/NanosWorld.html">NanosWorld</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/static_classes/Package.html">Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/static_classes/Render.html">Render</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/static_classes/Server.html">Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/static_classes/Timer.html">Timer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/static_classes/World.html">World</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scripting/utility/index.html">Utility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scripting/utility/Color.html">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/utility/JSON.html">JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/utility/Rotator.html">Rotator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/utility/Vector.html">Vector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/utility/Vector2D.html">Vector2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting/utility/NanosMathLibrary.html">NanosMathLibrary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scripting/Glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripting/Modules.html">Modules</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assets &amp; Modding</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modding/index.html">Modding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modding/AssetsDevelopmentKit.html">Assets Development Kit - ADK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modding/Characters.html">Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modding/MapsAndLevels.html">Maps &amp; Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modding/StaticMeshes.html">Static Meshes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modding/NanosWorldDefaultPack.html">Nanos World Default Assets Pack</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">nanos.world Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>nanos world Official Documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/nanos-world/docs/blob/master/index.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="nanos-world-official-documentation">
+<h1>nanos world Official Documentation<a class="headerlink" href="#nanos-world-official-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound" id="sec-general">
+</div>
+<div class="toctree-wrapper compound" id="sec-learn">
+</div>
+<div class="toctree-wrapper compound" id="sec-scripting">
+</div>
+<div class="toctree-wrapper compound" id="sec-modding">
+</div>
+<p>Welcome to the official documentation of nanos world! da best game ever made.</p>
+<p>nanos world is the next generation multiplayer sandbox game created by you and nanos. We do this by allowing players, developers and modders themselves to build their own game upon and to integrate their work in nanos world. Built upon Unreal Engine 4 (UE4), nanos framework and our experience, especially from Just Cause 3: Multiplayer and other modifications we created, you can turn your world into whatever you’d like. Bringing all participants to the table, players can join thousands of different worlds and thousands of different game modes with only one game and everybody can contribute to our common project.</p>
+<p>With nanos world you can realize your own game ideas and visions. Therefore, scripters can create their own game modes in Lua. There are a lot of gamers who have a game idea, but cannot realize it due to their limited knowledge and the high complexity of game development. With nanos world we create an environment in which these gamers can express themselves together with other gamers from around the world. For experienced modders, developers and scripters on a semi-professional or professional level we are going to create a complex and powerful scripting API and other systems which can be used to create very complex and advanced games, too. We give you direct access to the whole power of Unreal Engine 4.</p>
+<div class="toctree-wrapper compound">
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>This docs is under construction and we count on your to write it :). You are allowed and encouraged to edit this and the following pages of this docs, please refer to <a class="reference internal" href="ContributingToDocs.html#contributingtodocs"><span class="std std-ref">Contributing to the Docs</span></a> for more information.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We have a centralized space for reporting BUGs and Suggest new Ideas in <a class="reference external" href="https://issues.nanos.world">https://issues.nanos.world</a>. We encourage everyone to give suggestions and report BUGs because we are going to mainly focus our development in the suggestions and bugs reported in there.</p>
+</div>
+<script>
+        DrawCard(
+                "getting_started/index.html",
+                "https://i.imgur.com/to0sRzC.png",
+                "Getting Started",
+                "Introductory information for scripters and modders starting out creating gamemodes with nanos world."
+        );
+
+        DrawCard(
+                "ContributingToDocs.html",
+                "https://img.freepik.com/free-vector/illustration-document-icon_53876-28510.jpg?size=626&ext=jpg",
+                "Contributing to the Docs",
+                "Know how to fix bugs and help us on improving this docs."
+        );
+
+        DrawCard(
+                "tutorials/index.html",
+                "https://edsurge.imgix.net/uploads/post/image/13321/digitalpromise_banner-1588203848.jpg?auto=compress%2Cformat&w=640&h=259&fit=crop",
+                "Samples and Tutorials",
+                "Links to various example scriptings, sample gamemodes, and tutorials..."
+        );
+</script><div class="section" id="special-thanks">
+<h2>Special Thanks<a class="headerlink" href="#special-thanks" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>DasPascal - Tester, Bug Reporter and Documentation helper</p></li>
+<li><p>Falaxir - Tester, Bug Reporter and Documentation helper</p></li>
+<li><p>Nogitsu - Tester and Bug Reporter</p></li>
+<li><p>Daranix - Tester and Bug Reporter</p></li>
+<li><p>NightOwl - Tester and VSCode Snippet</p></li>
+<li><p>Resmurf - Tester and Bug Reporter</p></li>
+<li><p>chesiren - Tester and Bug Reporter</p></li>
+<li><p>FelixHtm - Tester and Bug Reporter</p></li>
+<li><p>TheToor - Tester and Bug Reporter</p></li>
+<li><p>EinfachMaxYT - Tester and Bug Reporter</p></li>
+<li><p>ZarosLive - Tester and Bug Reporter</p></li>
+<li><p>Alex0130359 - Tester and Bug Reporter</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="About.html" class="btn btn-neutral float-right" title="About us" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, nanos GbR
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
